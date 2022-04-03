@@ -48,8 +48,7 @@
     "note": "Create a Spotify App here: https://developer.spotify.com/dashboard/applications. Don't forget adding Redirect URL: http://192.168.X.Y:3081/oauth/spotify/callback under edit settings of the dashboard.",
     "platform": "linux",
 	"repository": {
-		"stackfile64": "stack/your-spotify.yml",
-		"url": "https://github.com/SiriusBrightstar/pi-hosted"
+		"url": "https://github.com/SiriusBrightstar/pi-hosted/stack/your-spotify.yml"
 	},
 	"title": "your-spotify",
 	"type": 3
