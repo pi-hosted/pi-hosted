@@ -49,7 +49,7 @@
     "platform": "linux",
 	"repository": {
 		"stackfile64": "stack/your-spotify.yml",
-		"url": "https://github.com/pi-hosted/pi-hosted"
+		"url": "https://github.com/SiriusBrightstar/pi-hosted"
 	},
 	"title": "your-spotify",
 	"type": 3
