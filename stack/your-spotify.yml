@@ -18,7 +18,7 @@ services:
       - CORS=all
       - TIMEZONE=${TZ}
   mongo:
-    container_name: mongo
+    container_name: mongo-your-spotify
     image: mongo:4.4.8
     volumes:
       - /portainer/Files/AppData/Config/your_spotify/DB:/data/db
