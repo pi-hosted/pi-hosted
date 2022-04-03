@@ -54,7 +54,7 @@ The profile should now show up within the app, however it will not quite work ye
 <br><br>
 ## Port forwarding
 
-Every port forwarding in a ruoter is done differently so I can't tell you how to do that.  However attached is a screenshot of what my port forward rule looks like in my
+Every port forwarding in a router is done differently so I can't tell you how to do that.  However attached is a screenshot of what my port forward rule looks like in my
 routers forwarding panel to give you an idea of how it works.
 ![port forward](https://user-images.githubusercontent.com/42878642/140616252-53c44b74-a455-48c9-a31c-c4adcae995de.png)
 
