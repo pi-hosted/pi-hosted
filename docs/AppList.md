@@ -42,6 +42,7 @@ List of all apps included in this project with info related to it.
 |[Emby](https://emby.media/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-emby) |  |  |  |  |
 |[EmbyStat](https://github.com/mregni/EmbyStat)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-embystat) |  |  |  |  |
 |[FileBrowser](https://filebrowser.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
+|[FileBrowser](https://filebrowser.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://filebrowser.org/installation#docker) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4) |
 |[Flame](https://github.com/pawelmalak/flame)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/flame#with-docker-recommended) |  |  |  |  |
 |[FoundryVTT Server](https://foundryvtt.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/felddy/foundryvtt) |  |  |  |  |
 |[FreshRSS](https://www.freshrss.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/FreshRSS/FreshRSS/tree/edge/Docker) |  |  |  |  |
@@ -78,6 +79,7 @@ List of all apps included in this project with info related to it.
 |[Medusa](https://pymedusa.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |  |
 |[Minetest](https://www.minetest.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |  |
+|[MinIO](https://min.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |  |
 |[Minisatip](https://github.com/catalinii/minisatip)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minisatip) |  |  |  |  |
 |[Mstream](https://mstream.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mstream) |  |  |  |  |
 |[Murmur](https://www.mumble.info/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yhaenggi/murmur-docker) |  |  |  |  |
@@ -113,7 +115,7 @@ List of all apps included in this project with info related to it.
 |[ProtonMail Bridge](https://protonmail.com/bridge/)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/shenxn/protonmail-bridge) |  |  |  |  |
 |[Pydio](https://www.pydio.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/pydio) |  |  |  |  |
 |[qBittorrent](https://www.qbittorrent.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-qbittorrent) |  |  |  |  |
-|[]()|32/64 bit|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [](../tools/) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]() |
+|[qFlood](https://hotio.dev/containers/qflood/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hotio.dev/containers/qflood/) |  |  |  |  |
 |[Quassel IRC](https://quassel-irc.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-quassel-core) |  |  |  |  |
 |[Radarr](https://radarr.video/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-radarr) |  |  |  |  |
 |[Raspberry Pi Docker Monitor](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/rpi_docker_monitor.md) | [![](../build/images/script_icon.png)](../tools/rpi_docker_monitor.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8) |
@@ -158,6 +160,7 @@ List of all apps included in this project with info related to it.
 |[Wireguard Server](https://github.com/WeeJeWel/wg-easy/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/WeeJeWel/wg-easy/#1-install-docker) | [![](../build/images/red_doc_icon.png)](../docs/wireguard-install.md) |  |  |  |
 |[Wordpress](https://wordpress.com/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/docker-library/docs/tree/master/wordpress#-via-docker-stack-deploy-or-docker-compose) | [![](../build/images/red_doc_icon.png)](../docs/wordpress_installation.md) |  |  |  |
 |[Yacht](https://yacht.sh/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://yacht.sh/docs/Installation/Install#via-docker-compose) |  |  |  |  |
+|[Yourls](https://yourls.org/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://yourls.org/#Install) |  | [![](../build/images/script_icon.png)](../tools/install_yourls.sh) |  |  |
 |[your-spotify](https://github.com/Yooooomi/your_spotify)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/Yooooomi/your_spotify#readme) |  |  |  |  |
 |[YouTubeDL-Material](https://github.com/Tzahi12345/YoutubeDL-Material)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Tzahi12345/YoutubeDL-Material#docker) |  |  |  |  |
 |[ZNC](https://wiki.znc.in/ZNC)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-znc) |  |  |  |  |

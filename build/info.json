@@ -118,6 +118,10 @@
 		{
 			"File": "searxng.md",
 			"Description": "Install and Setup Instructions for SearXNG Meta Search"
+		},
+		{
+			"File": "reactive-resume_installation.md",
+			"Description": "Install and Setup Instructions for Reactive Resume"
 		}
 	],
 	"tools": [
@@ -219,6 +223,14 @@
 			"Exec": "bash",
 			"Description": "PI OS 32 libseccomp2 Repair utility",
 			"wget": "https://git.io/JPXdj"
+		},
+		{
+			"File": "install_reactive-resume.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Doc": "reactive-resume_installation.md",
+			"Description": "Install Reactive-Resume",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh"
 		}
 	]
 }

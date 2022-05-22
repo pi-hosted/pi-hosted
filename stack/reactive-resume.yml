@@ -1,0 +1,38 @@
+version: "2"
+services:
+  proxy:
+    image: martadinata666/nginx:mainline
+    ports:
+      - ${PORT}:80
+    volumes:
+      - /portainer/Files/AppData/Config/reactive-resume/nginx.conf:/etc/nginx/conf.d/default.conf
+    restart: unless-stopped
+
+  app:
+    image: martadinata666/reactive-resume:v3.4.7
+    restart: unless-stopped
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=${DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=reactiveresume
+      - JWT_SECRET=${JWT_SECRET}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - PUBLIC_FLAG_DISABLE_SIGNUPS=${DISABLE_SIGNUPS}
+      - STORAGE_S3_ENABLED=false
+    volumes:
+      - /portainer/Files/AppData/Config/reactive-resume/assets:/home/debian/reactiveresume/server/dist/assets
+
+  db:
+    image: postgres:13
+    user: 1000:1000
+    environment:
+      - POSTGRES_USER=${DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=reactiveresume
+    restart: always
+    volumes:
+      - /portainer/Files/AppData/Config/reactive-resume/db:/var/lib/postgresql/data
+
