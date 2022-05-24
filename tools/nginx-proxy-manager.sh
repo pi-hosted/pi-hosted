@@ -6,10 +6,10 @@ function error {
 }
 
 echo "Creating directories..."
-sudo mkdir -p /portainer/Files/AppData/Config/nginx-proxy-manager/data || error "Failed to create data folder!"
-sudo mkdir -p /portainer/Files/AppData/Config/nginx-proxy-manager/letsencrypt || error "Failed to create letsencrypt folder!"
-sudo mkdir -p /portainer/Files/AppData/Config/nginx-proxy-manager/database || error "Failed to create database folder!"
+sudo mkdir -p /portainer/files/appdata/config/nginx-proxy-manager/data || error "Failed to create data folder!"
+sudo mkdir -p /portainer/files/appdata/config/nginx-proxy-manager/letsencrypt || error "Failed to create letsencrypt folder!"
+sudo mkdir -p /portainer/files/appdata/config/nginx-proxy-manager/database || error "Failed to create database folder!"
 echo "Creating a blank nginx-proxy-manager config files"
-sudo touch /portainer/Files/AppData/Config/nginx-proxy-manager/config.json || error "Failed to touch config.json file!"
+sudo touch /portainer/files/appData/config/nginx-proxy-manager/config.json || error "Failed to touch config.json file!"
 echo "Setup complete. You can now install the stack using the App Template."
 
