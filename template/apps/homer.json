@@ -14,6 +14,11 @@
 			"default": "1000",
 			"label": "UID",
 			"name": "UID"
+		},
+		{
+			"default": "0",
+			"label": "INIT_ASSETS",
+			"name": "INIT_ASSETS"
 		}
 	],
 	"image32": "b4bz/homer:latest",
