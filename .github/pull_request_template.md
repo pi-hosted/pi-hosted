@@ -8,7 +8,7 @@
 * pi-hosted_template/template/portainer-v2.json 
 
 ## Please make any changes to these files instead 
-* template/apps/`some-application-name.json
+* template/apps/`some-application-name.json`
 * stack/`some-stack-name.yml` 
 * docs/`some-docsname.md`
 * tools/`some-script.sh`
@@ -45,5 +45,4 @@
 - [ ] Does your submission pass tests?
 - [ ] Have you linted your code locally prior to submission?
 - [ ] Have you added an explanation of what your changes do and why you'd like us to include them?
-- [ ] Have you updated documentation, as applicable?
-- [ ] 
+- [ ] Have you updated documentation, as applicable?1
