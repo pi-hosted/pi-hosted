@@ -1,4 +1,4 @@
-## Warning we automatically generate the following files, your change will overwritten.
+## Warning we automatically generate the following files, your change(s) will overwritten.
 * docs/README.md
 * template/portainer-v2-arm32.json
 * template/portainer-v2-arm64.json
@@ -14,7 +14,7 @@
 * tools/`some-script.sh`
 * build/info.json
 
-
+<!-- Fill with - if not applicable-->
 ## Summary
 <!-- A short summary describing what was done... -->
 
