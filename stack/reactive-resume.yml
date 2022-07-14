@@ -9,7 +9,7 @@ services:
     restart: unless-stopped
 
   app:
-    image: martadinata666/reactive-resume:v3.4.7
+    image: martadinata666/reactive-resume:v3.4.8
     restart: unless-stopped
     environment:
       - SECRET_KEY=${SECRET_KEY}
