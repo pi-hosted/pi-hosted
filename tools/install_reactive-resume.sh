@@ -18,7 +18,7 @@ function check_internet() {
 check_internet
 
 echo "Creating directories..."
-sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/assets || error "Failed to create Reactive-Resume assets directory!"
+sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/uploads || error "Failed to create Reactive-Resume assets directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/db || error "Failed to create Reactive-Resume database directory!"
 
 echo "Fetching nginx configuration file"
