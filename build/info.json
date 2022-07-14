@@ -75,7 +75,13 @@
 		{
 			"ID": 13,
 			"Title": "Beginners Guide to WireGuard Docker and Installing Pi-OS 64bit",
-			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg"
+			"URL": "https://www.youtube.com/watch?v=yB_jAumIxOg",
+			"Doc": "wireguard-install.md"
+		},
+		{
+			"ID": 14,
+			"Title": "My Most used container! Snippet Box",
+			"URL": "https://www.youtube.com/watch?v=v-jUyB3fvAo"
 		}
 	],
 	"docs": [
@@ -118,10 +124,6 @@
 		{
 			"File": "searxng.md",
 			"Description": "Install and Setup Instructions for SearXNG Meta Search"
-		},
-		{
-			"File": "reactive-resume_installation.md",
-			"Description": "Install and Setup Instructions for Reactive Resume"
 		}
 	],
 	"tools": [
@@ -224,5 +226,20 @@
 			"Description": "PI OS 32 libseccomp2 Repair utility",
 			"wget": "https://git.io/JPXdj"
 		},
+		{
+			"File": "install_invidious.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Description": "Install Invidious",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh"
+		},
+		{
+			"File": "install_reactive-resume.sh",
+			"Type": "Preinstall",
+			"Exec": "bash",
+			"Doc": "reactive-resume_installation.md",
+			"Description": "Install Reactive-Resume",
+			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_reactive-resume.sh"
+		}
 	]
 }
