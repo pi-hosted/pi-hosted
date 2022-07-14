@@ -23,7 +23,7 @@ services:
       - PUBLIC_FLAG_DISABLE_SIGNUPS=${DISABLE_SIGNUPS}
       - STORAGE_S3_ENABLED=false
     volumes:
-      - /portainer/Files/AppData/Config/reactive-resume/assets:/home/debian/reactiveresume/server/dist/assets
+      - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
 
   db:
     image: postgres:13
