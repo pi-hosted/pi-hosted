@@ -1,13 +1,5 @@
 version: "2"
 services:
-  proxy:
-    image: martadinata666/nginx:mainline
-    ports:
-      - ${PORT}:80
-    volumes:
-      - /portainer/Files/AppData/Config/reactive-resume/nginx.conf:/etc/nginx/conf.d/default.conf
-    restart: unless-stopped
-
   app:
     image: martadinata666/reactive-resume:v3.4.8
     restart: unless-stopped
@@ -24,6 +16,8 @@ services:
       - STORAGE_S3_ENABLED=false
     volumes:
       - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
+    ports:
+      - ${PORT}:80
 
   db:
     image: postgres:13
