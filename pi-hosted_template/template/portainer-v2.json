@@ -256,6 +256,50 @@
 		},
 		{
 			"categories": [
+				"Downloader"
+			],
+			"description": "AriaNg is a modern web frontend making aria2 easier to use. AriaNg is written in pure html & javascript, thus it does not need any compilers or runtime environment. You can just put AriaNg in your web server and open it in your browser. AriaNg uses responsive layout, and supports any desktop or mobile devices.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "443",
+					"label": "ARIA2RPCPORT",
+					"name": "ARIA2RPCPORT"
+				}
+			],
+			"image": "hurlenko/aria2-ariang",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
+			"name": "AriaNG",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "AriaNG",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/AriaNG",
+					"container": "/aria2/conf"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/aria2/data"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/hurlenko/aria2-ariang-docker\" target=\"_blank\">https://github.com/hurlenko/aria2-ariang-docker</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/hurlenko/aria2-ariang-docker\" target=\"_blank\">https://github.com/hurlenko/aria2-ariang-docker</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Authentication"
@@ -1680,6 +1724,23 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/hubbcaps/gazee\" target=\"_blank\">https://github.com/hubbcaps/gazee</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/gazee\" target=\"_blank\">https://hub.docker.com/r/linuxserver/gazee</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Proxy"
+			],
+			"description": "Simple socks5 server using go-socks5 with authentication options",
+			"image": "serjs/go-socks5-proxy",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/socks5.png",
+			"name": "socks5-proxy",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Go-Socks5-Proxy",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -4652,7 +4713,7 @@
 				"21119:21119/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "RestDesk",
+			"title": "RustDesk",
 			"type": 1,
 			"volumes": [
 				{

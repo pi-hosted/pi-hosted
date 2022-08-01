@@ -12,6 +12,7 @@ List of all apps included in this project with info related to it.
 |[Airsonic](https://airsonic.github.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://airsonic.github.io/docs/install/docker/) |  |  |  |  |
 |[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |  |
 |[Archivebox](https://archivebox.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |  |
+|[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |  |
 |[Authelia](https://www.authelia.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |  |
 |[Bazarr](https://www.bazarr.media/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |  |
 |[Beets](https://beets.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-beets) |  |  |  |  |
@@ -49,6 +50,7 @@ List of all apps included in this project with info related to it.
 |[Gazee](https://github.com/hubbcaps/gazee)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/linuxserver/gazee) |  |  |  |  |
 |[Gitea](https://gitea.com/)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/) |  |  |  |  |
 |[Gitea with Mariadb](https://gitea.com/)|64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.gitea.io/en-us/install-with-docker/#mysql-database) |  |  |  |  |
+|[Go-Socks5-Proxy](https://hub.docker.com/r/serjs/go-socks5-proxy)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/serjs/go-socks5-proxy) |  |  |  |  |
 |[Gotify](https://gotify.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gotify.net/docs/install) |  |  |  |  |
 |[Grocy](https://grocy.info/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-grocy) |  |  |  |  |
 |[Guacamole](https://guacamole.apache.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/oznu/guacamole) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=cKAhnf8X1lo&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=3) |
@@ -124,7 +126,7 @@ List of all apps included in this project with info related to it.
 |[Reactive-Resume](https://rxresu.me/)|64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/martadinata666/reactive-resume) |  |  |  |  |
 |[Redmine](https://www.redmine.org/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/redmine) |  |  |  |  |
 |[Resilio Sync](https://www.resilio.com/individuals/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-resilio-sync) |  |  |  |  |
-|[RestDesk](https://rustdesk.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rustdesk/rustdesk-server) |  |  |  |  |
+|[RustDesk](https://rustdesk.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rustdesk/rustdesk-server) |  |  |  |  |
 |[ruTorrent](https://github.com/Novik/ruTorrent)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/crazy-max/docker-rtorrent-rutorrent) |  |  |  |  |
 |[SABnzbd](https://sabnzbd.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sabnzbd) |  |  |  |  |
 |[Samba](https://www.samba.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/dperson/samba) |  |  |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11) |
