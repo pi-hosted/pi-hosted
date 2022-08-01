@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    image: martadinata666/reactive-resume:v3.4.8
+    image: martadinata666/reactive-resume:v3.5.1
     restart: unless-stopped
     environment:
       - SECRET_KEY=${SECRET_KEY}
@@ -17,7 +17,7 @@ services:
     volumes:
       - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
     ports:
-      - ${PORT}:80
+      - ${PORT}:3000
 
   db:
     image: postgres:13
