@@ -29,6 +29,7 @@ List of all apps included in this project with info related to it.
 |[CouchPotato](https://couchpota.to/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-couchpotato) |  |  |  |  |
 |[Daapd](https://owntone.github.io/owntone-server/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |  |
+|[Dashy](https://dashy.to)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  |  |  |  |
 |[Davos](https://github.com/linuxserver/davos)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |  |
 |[DeeMix](https://deemix.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  |  |  |
@@ -97,7 +98,7 @@ List of all apps included in this project with info related to it.
 |[Nginx Proxy Manager with Goaccess Charts](https://nginxproxymanager.com/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Nginx Proxy Manager](https://nginxproxymanager.com/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://nginxproxymanager.com/setup/#using-mysql-mariadb-database) | [![](../build/images/red_doc_icon.png)](../docs/nginx_proxy_manager.md) | [![](../build/images/script_icon.png)](../tools/nginx-proxy-manager.sh) |  | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10) |
 |[Node Red](https://nodered.org/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://nodered.org/docs/getting-started/docker) |  |  |  |  |
-|[]()|32/64 bit|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [](../tools/) | [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=plastic&logo=youtube&logoColor=white)]() |
+|[NUT Server](https://networkupstools.org)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/instantlinux/nut-upsd) |  |  |  |  |
 |[NZBGet](https://nzbget.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbget) |  |  |  |  |
 |[NZBHydra 2](https://github.com/theotherp/nzbhydra2)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-nzbhydra2) |  |  |  |  |
 |[Omada EAP Controller](https://www.tp-link.com/us/business-networking/omada-sdn-controller/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mbentley/omada-controller) |  |  |  |  |
@@ -140,6 +141,7 @@ List of all apps included in this project with info related to it.
 |[Speedtest Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/henrywhitaker3/Speedtest-Tracker#using-docker) |  |  |  |  |
 |[Sshwifty](https://sshwifty.herokuapp.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nirui/sshwifty#docker-image) |  |  |  |  |
 |[SyncThing](https://syncthing.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-syncthing) |  |  |  |  |
+|[Tailscale](https://tailscale.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/tailscale/tailscale) |  |  |  |  |
 |[Tautulli](https://tautulli.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-tautulli) |  |  |  |  |
 |[TheLounge](https://thelounge.chat/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-thelounge) |  |  |  |  |
 |[TiddlyWiki](https://tiddlywiki.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/nicolaw/tiddlywiki) |  |  |  |  |
