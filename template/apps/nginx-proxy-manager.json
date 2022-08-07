@@ -48,7 +48,7 @@
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"restart_policy": "unless-stopped",
-	"title": "Nginx Proxy Manager",
+	"title": "Nginx Proxy Manager with Mysql",
 	"type": 3,
 	"videoID": 9,
 	"webpage": "https://nginxproxymanager.com/"
