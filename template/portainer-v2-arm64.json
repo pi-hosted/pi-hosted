@@ -2685,6 +2685,43 @@
 		},
 		{
 			"categories": [
+				"Video",
+				"Music",
+				"Other"
+			],
+			"description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+			"env": [
+				{
+					"default": "debug",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "fallenbagel/jellyseerr:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyseerr.png",
+			"name": "jellyseerr",
+			"platform": "linux",
+			"ports": [
+				"5055:5055/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jellyseerr",
+					"container": "/app/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Fallenbagel/jellyseerr\" target=\"_blank\">https://github.com/Fallenbagel/jellyseerr</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/fallenbagel/jellyseerr\" target=\"_blank\">https://hub.docker.com/r/fallenbagel/jellyseerr</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Video"
 			],
 			"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
@@ -3731,7 +3768,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/MySQL",
-					"container": "/var/lib/mysql "
+					"container": "/var/lib/mysql"
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mysql.com/\" target=\"_blank\">https://www.mysql.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/mysql\" target=\"_blank\">https://hub.docker.com/_/mysql</a><br><br><br>"
