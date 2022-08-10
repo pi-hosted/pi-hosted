@@ -1,0 +1,42 @@
+{
+    "categories": [
+        "Video",
+        "Music",
+        "Other"
+    ],
+    "description": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        },
+        {
+            "default": "America/New_York",
+            "label": "TZ",
+            "name": "TZ"
+        }
+    ],
+    "image": "lscr.io/linuxserver/overseerr:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.png",
+    "name": "overseerr",
+    "platform": "linux",
+    "ports": [
+        "5055:5055/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Overseerr - Plex Server Request Handler",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/portainer/Files/AppData/Config/Overseerr",
+            "container": "config"
+        }
+    ],
+    "note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://overseerr.dev/\" target=\"_blank\">https://overseerr.dev/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/overseerr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/overseerr</a><br><br><br>"
+}
