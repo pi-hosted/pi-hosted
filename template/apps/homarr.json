@@ -1,0 +1,45 @@
+{
+    "categories": [
+        "Tools",
+        "Web",
+        "Other"
+    ],
+    "description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+    "env": [
+        {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+        },
+        {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+        }
+    ],
+    "image": "ghcr.io/ajnart/homarr:latest",
+    "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
+    "name": "homarr",
+    "platform": "linux",
+    "ports": [
+        "7575:7575/tcp"
+    ],
+    "restart_policy": "unless-stopped",
+    "title": "Homarr - simple and lightweight homepage for your server",
+    "type": 1,
+    "volumes": [
+        {
+            "bind": "/var/run/docker.sock",
+            "container": "/var/run/docker.sock"
+        },
+        {
+            "bind": "/portainer/Files/AppData/Config/Homarr/configs",
+            "container": "/app/data/configs"
+        },
+        {
+            "bind": "/portainer/Files/AppData/Config/Homarr/icons",
+            "container": "/app/public/icons"
+        }
+    ],
+    "note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>"
+}
