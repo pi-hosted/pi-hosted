@@ -17,7 +17,8 @@
             "name": "PGID"
         }
     ],
-    "image": "ghcr.io/ajnart/homarr:latest",
+    "image32": "ghcr.io/ajnart/homarr:latest",
+    "image64": "ghcr.io/ajnart/homarr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
     "name": "homarr",
     "platform": "linux",
@@ -41,5 +42,6 @@
             "container": "/app/public/icons"
         }
     ],
-    "note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>"
+    "officialDoc": "https://github.com/ajnart/homarr",
+    "webpage": "https://homarr.vercel.app/"
 }
