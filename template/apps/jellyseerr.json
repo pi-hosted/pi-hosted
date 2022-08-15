@@ -27,7 +27,8 @@
             "name": "TZ"
         }
     ],
-    "image": "fallenbagel/jellyseerr:latest",
+    "image32": "fallenbagel/jellyseerr:latest",
+    "image64": "fallenbagel/jellyseerr:latest",
     "logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyseerr.png",
     "name": "jellyseerr",
     "platform": "linux",
@@ -43,5 +44,6 @@
             "container": "/app/config"
         }
     ],
-    "note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Fallenbagel/jellyseerr\" target=\"_blank\">https://github.com/Fallenbagel/jellyseerr</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/fallenbagel/jellyseerr\" target=\"_blank\">https://hub.docker.com/r/fallenbagel/jellyseerr</a><br><br><br>"
+    "officialDoc": "https://hub.docker.com/r/fallenbagel/jellyseerr",
+    "webpage": "https://github.com/Fallenbagel/jellyseerr"
 }
