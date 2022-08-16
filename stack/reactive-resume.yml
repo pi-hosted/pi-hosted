@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    image: martadinata666/reactive-resume:v3.5.1
+    image: martadinata666/reactive-resume:v3.5.3
     restart: unless-stopped
     environment:
       - SECRET_KEY=${SECRET_KEY}
