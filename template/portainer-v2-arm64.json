@@ -2132,6 +2132,51 @@
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://heimdall.site/\" target=\"_blank\">https://heimdall.site/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-heimdall\" target=\"_blank\">https://docs.linuxserver.io/images/docker-heimdall</a><br><br><br>"
 		},
 		{
+			"categories": [
+				"Tools",
+				"Web",
+				"Other"
+			],
+			"description": "Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "ghcr.io/ajnart/homarr:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homarr.png",
+			"name": "homarr",
+			"platform": "linux",
+			"ports": [
+				"7575:7575/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Homarr - simple and lightweight homepage for your server",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/configs",
+					"container": "/app/data/configs"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homarr/icons",
+					"container": "/app/public/icons"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://homarr.vercel.app/\" target=\"_blank\">https://homarr.vercel.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ajnart/homarr\" target=\"_blank\">https://github.com/ajnart/homarr</a><br><br><br>"
+		},
+		{
 			"description": "Home Assistant is a free and open-source software for home automation that is designed to be the central control system for smart home devices with focus on local control and privacy.",
 			"image": "homeassistant/home-assistant:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homeassistant.png",
@@ -2685,6 +2730,53 @@
 		},
 		{
 			"categories": [
+				"Video",
+				"Music",
+				"Other"
+			],
+			"description": "Jellyseerr is a free and open source software application for managing requests for your media library. It is a a fork of Overseerr built to bring support for Jellyfin & Emby media servers!",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "debug",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "fallenbagel/jellyseerr:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/jellyseerr.png",
+			"name": "jellyseerr",
+			"platform": "linux",
+			"ports": [
+				"5055:5055/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Jellyseerr - Overseerr Fork with Jellyfin, Emby & Plex Support",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Jellyseerr",
+					"container": "/app/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Fallenbagel/jellyseerr\" target=\"_blank\">https://github.com/Fallenbagel/jellyseerr</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/fallenbagel/jellyseerr\" target=\"_blank\">https://hub.docker.com/r/fallenbagel/jellyseerr</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Video"
 			],
 			"description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
@@ -2855,7 +2947,7 @@
 				"443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Let's Encrypt",
+			"title": "Let's Encrypt [DEPRECATED]",
 			"type": 1,
 			"volumes": [
 				{
@@ -3695,6 +3787,52 @@
 				"Other",
 				"Tools"
 			],
+			"description": "MySQL is an open-source relational database management system (RDBMS). It is the most widely used relational database management system (RDBMS) by both large and small businesses. It is the most widely used RDBMS by both large and small businesses.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "rootpassword",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "mysql:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mysql.png",
+			"name": "mysql",
+			"platform": "linux",
+			"ports": [
+				"3306:3306/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "MySQL",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/MySQL",
+					"container": "/var/lib/mysql "
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.mysql.com/\" target=\"_blank\">https://www.mysql.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/mysql\" target=\"_blank\">https://hub.docker.com/_/mysql</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
 			"description": "n8n is an extendable workflow automation tool.",
 			"env": [
 				{
@@ -3921,57 +4059,7 @@
 				"Proxy",
 				"Tools"
 			],
-			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				},
-				{
-					"default": "America/New_York",
-					"label": "TZ",
-					"name": "TZ"
-				},
-				{
-					"default": "password",
-					"label": "DATABASE_PASSWORD",
-					"name": "DATABASE_PASSWORD"
-				},
-				{
-					"default": "password",
-					"label": "MYSQL_ROOT_PASSWORD",
-					"name": "MYSQL_ROOT_PASSWORD"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
-			"name": "nginx-proxy-manager",
-			"platform": "linux",
-			"ports": [
-				"80:80/tcp",
-				"81:81/tcp",
-				"443:443/tcp"
-			],
-			"repository": {
-				"stackfile": "stack/nginx-proxy-manager.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
-			},
-			"restart_policy": "unless-stopped",
-			"title": "Nginx Proxy Manager",
-			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
-		},
-		{
-			"categories": [
-				"Proxy",
-				"Tools"
-			],
-			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"description": "[DEPRECATED] Nginx Proxy Manager v2 with mysql and Goaccess Charts enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
 			"env": [
 				{
 					"default": "1000",
@@ -4024,7 +4112,7 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
-			"name": "nginx-proxy-manager-goaccess",
+			"name": "nginx-proxy-manager-mysql-goaccess",
 			"platform": "linux",
 			"ports": [
 				"80:80/tcp",
@@ -4037,9 +4125,171 @@
 				"url": "https://github.com/pi-hosted/pi-hosted"
 			},
 			"restart_policy": "unless-stopped",
-			"title": "Nginx Proxy Manager with Goaccess Charts",
+			"title": "Nginx Proxy Manager v2 with Mysql and Goaccess Charts [DEPRECATED]",
 			"type": 3,
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Tools"
+			],
+			"description": "[DEPRECATED] Nginx Proxy Manager Version 2 with Mysql enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "password",
+					"label": "DATABASE_PASSWORD",
+					"name": "DATABASE_PASSWORD"
+				},
+				{
+					"default": "password",
+					"label": "MYSQL_ROOT_PASSWORD",
+					"name": "MYSQL_ROOT_PASSWORD"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+			"name": "nginx-proxy-manager-mysql",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp"
+			],
+			"repository": {
+				"stackfile": "stack/nginx-proxy-manager.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Nginx Proxy Manager v2 with Mysql [DEPRECATED]",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Tools"
+			],
+			"description": "Nginx Proxy Manager v2 with sqlite and Goaccess Charts enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "false",
+					"label": "SKIP_ARCHIVED_LOGS",
+					"name": "SKIP_ARCHIVED_LOGS",
+					"description": "Defaults to false. Set to true to skip archived logs, i.e. proxy-host*.gz"
+				},
+				{
+					"default": "false",
+					"label": "BASIC_AUTH",
+					"name": "BASIC_AUTH",
+					"description": "Defaults to false. Set to true to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly."
+				},
+				{
+					"default": "user",
+					"label": "BASIC_AUTH_USERNAME Ignore if Basic Auth set to false",
+					"name": "BASIC_AUTH_USERNAME",
+					"description": "(Optional) Requires BASIC_AUTH to bet set to true. Username for basic authentication."
+				},
+				{
+					"default": "Password",
+					"label": "BASIC_AUTH_PASSWORD Ignore if Basic Auth set to false",
+					"name": "BASIC_AUTH_PASSWORD",
+					"description": "(Optional) Requires BASIC_AUTH to bet set to true. Password for basic authentication."
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+			"name": "nginx-proxy-manager-sqllite-goaccess",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp",
+				"7880:7880/tcp"
+			],
+			"repository": {
+				"stackfile": "stack/nginx-proxy-manager-sqlite-goaccess.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Nginx Proxy Manager v2 with Sqlite and Goaccess Charts",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#running-the-app\" target=\"_blank\">https://nginxproxymanager.com/setup/#running-the-app</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+		},
+		{
+			"categories": [
+				"Proxy",
+				"Tools"
+			],
+			"description": "Nginx Proxy Manager v2 with Sqlite enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.  Please see the install document at https://github.com/pi-hosted/pi-hosted/tree/master/docs installing the template",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "jc21/nginx-proxy-manager:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
+			"name": "nginx-proxy-manager-sqlite",
+			"platform": "linux",
+			"ports": [
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Nginx Proxy Manager v2 with Sqllite",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/nginx-proxy-manager/letsencrypt",
+					"container": "/etc/letsencrypt"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/\" target=\"_blank\">https://nginxproxymanager.com/setup/</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
 			"categories": [
@@ -4365,11 +4615,11 @@
 		},
 		{
 			"categories": [
-				"Cloud",
-				"Management",
-				"Productivity"
+				"Video",
+				"Music",
+				"Other"
 			],
-			"description": "Paperless is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents. https://github.com/jonaswinkler/paperless-ng",
+			"description": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
 			"env": [
 				{
 					"default": "1000",
@@ -4380,29 +4630,87 @@
 					"default": "1000",
 					"label": "PGID",
 					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/paperless-ng",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
-			"name": "paperless",
+			"image": "lscr.io/linuxserver/overseerr:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.png",
+			"name": "overseerr",
 			"platform": "linux",
 			"ports": [
-				"8005:8000/tcp"
+				"5055:5055/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Paperless",
+			"title": "Overseerr - Plex Server Request Handler",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/paperless/config",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/paperless/data",
-					"container": "/data"
+					"bind": "/portainer/Files/AppData/Config/Overseerr",
+					"container": "config"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/jonaswinkler/paperless-ng\" target=\"_blank\">https://github.com/jonaswinkler/paperless-ng</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-paperless-ng\" target=\"_blank\">https://docs.linuxserver.io/images/docker-paperless-ng</a><br><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://overseerr.dev/\" target=\"_blank\">https://overseerr.dev/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/overseerr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/overseerr</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Cloud",
+				"Management",
+				"Productivity"
+			],
+			"description": "Paperless-ngx is a document management system that transforms your physical documents into a searchable online archive so you can keep, well, less paper.  Paperless-ngx forked from paperless-ng to continue the great work and distribute responsibility of supporting and advancing the project among a team of people. Consider joining us! Discussion of this transition can be found in issues #1599 and #1632.  A demo is available at demo.paperless-ngx.com using login demo / demo. Note: demo content is reset frequently and confidential information should not be uploaded.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID",
+					"description": "for UserID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID",
+					"description": "for GroupID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ",
+					"description": "Specify a timezone to use for example America/New_York"
+				},
+				{
+					"default": "",
+					"label": "PAPERLESS_URL",
+					"name": "PAPERLESSURL",
+					"description": "Example https://paperless.example.com.  It would be best to run this behind a reverse proxy"
+				},
+				{
+					"default": "",
+					"label": "Secret Key",
+					"name": "RANDOMKEY",
+					"description": "This should be a very long sequence of random characters."
+				},
+				{
+					"default": "eng",
+					"label": "OCR Language",
+					"name": "LANG",
+					"description": "The default language to use for OCR"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/paperless.png",
+			"name": "paperless-ngx",
+			"repository": {
+				"stackfile": "stack/paperless-ngx.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Paperless NGX",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/paperless-ngx/paperless-ngx\" target=\"_blank\">https://github.com/paperless-ngx/paperless-ngx</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5931,7 +6239,10 @@
 			"description": "Connect your devices and users together in your own secure Zero config virtual private network. ",
 			"env": [
 				{
-					"AUTH_KEY": ""
+					"default": "",
+					"description": "Get AUTH KEY from your tailscale.com user panel",
+					"label": "AUTH_KEY",
+					"name": "AUTH_KEY"
 				}
 			],
 			"image": "tailscale/tailscale:latest",
