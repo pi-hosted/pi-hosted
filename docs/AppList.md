@@ -29,7 +29,7 @@ List of all apps included in this project with info related to it.
 |[CouchPotato](https://couchpota.to/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-couchpotato) |  |  |  |  |
 |[Daapd](https://owntone.github.io/owntone-server/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-daapd) |  |  |  |  |
 |[DashMachine](https://github.com/rmountjoy92/DashMachine)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/rmountjoy92/DashMachine) |  |  |  |  |
-|[Dashy](https://dashy.to)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  |  |  |  |
+|[Dashy](https://dashy.to)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://dashy.to/docs/quick-start) |  | [![](../build/images/script_icon.png)](../tools/install_dashy.sh) |  |  |
 |[Davos](https://github.com/linuxserver/davos)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-davos) |  |  |  |  |
 |[DeeMix](https://deemix.app/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://gitlab.com/Bockiii/deemix-docker) |  |  |  |  |
 |[Deluge](https://www.deluge-torrent.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-deluge) |  |  |  |  |
@@ -83,6 +83,7 @@ List of all apps included in this project with info related to it.
 |[MariaDB](https://mariadb.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |  |
 |[Mealie](https://hay-kot.github.io/mealie/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://hay-kot.github.io/mealie/documentation/getting-started/install/) |  |  |  |  |
 |[Medusa](https://pymedusa.com/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |  |
+|[MeTube](https://hub.docker.com/r/alexta69/metube)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |  |
 |[Minetest](https://www.minetest.net/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |  |
 |[MinIO](https://min.io/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://docs.min.io/minio/baremetal/quickstart/quickstart.html) |  |  |  |  |
@@ -161,6 +162,7 @@ List of all apps included in this project with info related to it.
 |[UniFi Video](https://github.com/pducharme/UniFi-Video-Controller)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pducharme/UniFi-Video-Controller) |  |  |  |  |
 |[UnPoller Monitor](https://unpoller.com/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md) | [![](../build/images/red_doc_icon.png)](../docs/UnPoller-Monitor.md) | [![](../build/images/script_icon.png)](../tools/unpoller-install.sh) |  |  |
 |[Uptime Kuma](https://github.com/louislam/uptime-kuma)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/louislam/uptime-kuma/wiki/%F0%9F%94%A7-How-to-Install#-docker) |  |  |  |  |
+|[UrBackup](https://www.urbackup.org/)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://www.github.com/uroni/urbackup-server-docker) |  |  |  |  |
 |[Vaultwarden](https://github.com/dani-garcia/vaultwarden)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/dani-garcia/vaultwarden/wiki) |  |  |  |  |
 |[Vikunja With Frontend](https://vikunja.io/)|32/64 bit|Stack| [![](../build/images/blue_doc_icon.png)](https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy) |  | [![](../build/images/script_icon.png)](../tools/install_vikunja.sh) |  |  |
 |[Vlmcsd - KMS](https://hub.docker.com/r/mikolatero/vlmcsd)|32/64 bit|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/mikolatero/docker-vlmcsd) |  |  |  |  |
