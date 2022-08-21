@@ -27,6 +27,7 @@
 	"repository": {
 		"stackfile_arm32": "stack/node-red.yml",
 		"stackfile_arm64": "stack/node-red.yml",
+		"stackfile_amd64": "stack/node-red.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",

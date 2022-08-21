@@ -44,6 +44,7 @@
 	"repository": {
 		"stackfile_arm32": "stack/nextcloud.yml",
 		"stackfile_arm64": "stack/nextcloud.yml",
+		"stackfile_amd64": "stack/nextcloud.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Nextcloud",

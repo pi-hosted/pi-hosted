@@ -49,6 +49,7 @@
 	"repository": {
 		"stackfile_arm32": "stack/wireguard-easy.yml",
 		"stackfile_arm64": "stack/wireguard-easy.yml",
+		"stackfile_amd64": "stack/wireguard-easy.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Wireguard Server",

@@ -48,6 +48,7 @@
   "repository": {
     "stackfile_arm32": "stack/your-spotify.yml",
     "stackfile_arm64": "stack/your-spotify.yml",
+    "stackfile_amd64": "stack/your-spotify.yml",
     "url": "https://github.com/pi-hosted/pi-hosted"
   },
   "title": "your-spotify",

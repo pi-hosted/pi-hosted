@@ -34,6 +34,7 @@
 	"platform": "linux",
 	"repository": {
 		"stackfile_arm64": "stack/pritunl.yml",
+		"stackfile_amd64": "stack/pritunl.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Pritunl",
