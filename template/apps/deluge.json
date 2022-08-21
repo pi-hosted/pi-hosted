@@ -33,6 +33,7 @@
 	"restart_policy": "unless-stopped",
 	"title": "Deluge",
 	"type": 1,
+	"videoID": 16,
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Deluge",
