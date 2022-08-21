@@ -3,12 +3,14 @@
 # Blank portainer templates
 json_arm32='{"version":"2","templates":[]}'
 json_arm64='{"version":"2","templates":[]}'
+json_amd64='{"version":"2","templates":[]}'
 
 # File variables
 appinfo='build/info.json'
 Oldtemplate_arm32='pi-hosted_template/template/portainer-v2.json'
 template_arm32='template/portainer-v2-arm32.json'
 template_arm64='template/portainer-v2-arm64.json'
+template_amd64='template/portainer-v2-amd64.json'
 
 # App info
 repo='https://github.com/pi-hosted/pi-hosted/blob/master/'
@@ -100,6 +102,7 @@ for app in template/apps/*.json; do
 	# Splitting into 32 and 64 bit jsons
 	appjson_arm32=$appjson
 	appjson_arm64=$appjson
+	appjson_amd64=$appjson
 
 	# Check if app is to be applied to all (no arch identified)
 	# If there is no indication of architecture (32 or 64) on image or stackfile keys
@@ -125,32 +128,47 @@ for app in template/apps/*.json; do
 			unset appjson_arm64
 		fi
 
+		# Parsing amd 64 bit apps
+		if  echo "$appjson_amd64" | grep -qE '"(image|stackfile)_amd64":' ; then
+			# Rename key
+			appjson_amd64=$( echo "$appjson_amd64" | sed -E 's/"(image|stackfile)_amd64":/"\1":/' )
+		else
+			# App does not contain 64bit template
+			unset appjson_amd64
+		fi
+
 	fi
 
 
 	# Appending to json_arm32
 	if [[ -n "$appjson_arm32" ]]; then
 		# Cleaning App json before adding to template
-		appjson_arm32=$( echo "$appjson_arm32" | jq 'del(.image_arm32, .image_arm64, .repository.stackfile_arm32, .repository.stackfile_arm64)')
+		appjson_arm32=$( echo "$appjson_arm32" | jq 'del(.image_arm32, .image_arm64, .image_amd64, .repository.stackfile_arm32, .repository.stackfile_arm64, .repository.stackfile_amd64)')
 		json_arm32=$( echo "$json_arm32" | jq --argjson newApp "$appjson_arm32" '.templates += [$newApp]' )
 	fi
 
 	# Appending to json_arm64
 	if [[ -n "$appjson_arm64" ]]; then
 		# Cleaning App json before adding to template
-		appjson_arm64=$( echo "$appjson_arm64" | jq 'del(.image_arm32, .image_arm64, .repository.stackfile_arm32, .repository.stackfile_arm64)')
+		appjson_arm64=$( echo "$appjson_arm64" | jq 'del(.image_arm32, .image_arm64, .image_amd64, .repository.stackfile_arm32, .repository.stackfile_arm64, .repository.stackfile_amd64)')
 		json_arm64=$( echo "$json_arm64" | jq --argjson newApp "$appjson_arm64" '.templates += [$newApp]' )
 	fi
 
+	# Appending to json_amd64
+	if [[ -n "$appjson_amd64" ]]; then
 		# Cleaning App json before adding to template
+		appjson_amd64=$( echo "$appjson_amd64" | jq 'del(.image_arm32, .image_arm64, .image_amd64, .repository.stackfile_arm32, .repository.stackfile_arm64, .repository.stackfile_amd64)')
+		json_amd64=$( echo "$json_amd64" | jq --argjson newApp "$appjson_amd64" '.templates += [$newApp]' )
+	fi
 
 	# clean variables before next loop
-	unset appjson_arm32 appjson_arm64 note
+	unset appjson_arm32 appjson_arm64 appjson_amd64 note
 done
 
 # Create Templates
 echo "$json_arm32" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template_arm32"
 echo "$json_arm64" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template_arm64"
+echo "$json_amd64" | jq --tab '.templates |= sort_by(.title | ascii_upcase)' > "$template_amd64"
 
 # Keep old template up to date
 cp -f "$template_arm32" "$Oldtemplate_arm32"
