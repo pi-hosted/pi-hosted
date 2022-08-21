@@ -7,6 +7,7 @@
 	"hostname": "rpi-mosquitto",
 	"image_arm32": "eclipse-mosquitto:latest",
 	"image_arm64": "eclipse-mosquitto:latest",
+	"image_amd64": "eclipse-mosquitto:latest",
 	"logo": "https://raw.githubusercontent.com/docker-library/docs/757578e3a44e5460a8a11d32a81776f8b74231a9/eclipse-mosquitto/logo.png",
 	"name": "mosquitto",
 	"officialDoc": "https://hub.docker.com/_/eclipse-mosquitto",

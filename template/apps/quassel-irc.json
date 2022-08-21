@@ -17,6 +17,7 @@
 	],
 	"image_arm32": "linuxserver/quassel-core:latest",
 	"image_arm64": "linuxserver/quassel-core:latest",
+	"image_amd64": "linuxserver/quassel-core:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/quassel-core-icon.png",
 	"name": "quassel-core",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-quassel-core",

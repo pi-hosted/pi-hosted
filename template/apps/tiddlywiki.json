@@ -6,6 +6,7 @@
 	"description": "A unique, non-linear notebook wiki.",
 	"image_arm32": "nicolaw/tiddlywiki:latest",
 	"image_arm64": "nicolaw/tiddlywiki:latest",
+	"image_amd64": "nicolaw/tiddlywiki:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/tiddlywiki.png",
 	"name": "tiddlywiki",
 	"officialDoc": "https://gitlab.com/nicolaw/tiddlywiki",

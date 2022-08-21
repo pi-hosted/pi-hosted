@@ -21,6 +21,7 @@
 	],
 	"image_arm32": "linuxserver/duplicati:latest",
 	"image_arm64": "linuxserver/duplicati:latest",
+	"image_amd64": "linuxserver/duplicati:latest",
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/duplicati-icon.png",
 	"name": "duplicati",
 	"officialDoc": "https://docs.linuxserver.io/images/docker-duplicati",
