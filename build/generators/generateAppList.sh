@@ -17,7 +17,7 @@ cp -f "$AppList_TEMPLATE" "$AppList"
 while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 
 	# Clear previous variables
-	unset doc script extra vid oweb odoc type has32 has64
+	unset doc script extra vid oweb odoc type hasArm32 hasArm64 hasAmd64 Arch
 
 	# Get app json
 	appconf=$( jq '.' "$appfile" )
@@ -27,14 +27,17 @@ while IFS='' read -u 9 -r appfile || [[ -n $appfile ]]; do
 
 	# App Architecture
 	if echo "$appconf" | jq -e '.image' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile' &> /dev/null ; then
-		has32='32'
-		has64='64'
+		Arch='Arm32<br>Arm64<br>Amd64'
 	else
-		if echo "$appconf" | jq -e '.image32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile32' &> /dev/null ; then has32='32' ; fi
-		if echo "$appconf" | jq -e '.image64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile64' &> /dev/null ; then has64='64' ; fi
+		if echo "$appconf" | jq -e '.image_arm32' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm32' &> /dev/null ; then Arch='Arm32' ; fi
+		if echo "$appconf" | jq -e '.image_arm64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_arm64' &> /dev/null ; then
+			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Arm64"
+		fi
+		if echo "$appconf" | jq -e '.image_amd64' &> /dev/null || echo "$appconf" | jq -e '.repository.stackfile_amd64' &> /dev/null ; then
+			Arch="$([[ -n "$Arch" ]] && echo "$Arch<br>" )Amd64"
+		fi
 
 	fi
-	[[ -n "$has32" && -n "$has64" ]] && Arch='32/64 bit' || Arch="$has32$has64 bit"
 
 	# Apps Type
 	apptype=$( echo "$appconf" | jq '.type' | tr -d '"' )
