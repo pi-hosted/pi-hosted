@@ -14,6 +14,7 @@ template_amd64='template/portainer-v2-amd64.json'
 
 # App info
 repo='https://github.com/pi-hosted/pi-hosted/blob/master/'
+rawrepo='https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/'
 header='<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href="https://github.com/pi-hosted/pi-hosted" target="_blank">https://github.com/pi-hosted/pi-hosted</a></b><br>'
 
 # Run script from base directory
@@ -58,13 +59,16 @@ for app in template/apps/*.json; do
 		unset PHDoc
 	fi
 
+	# Pre-Install Script
 	if Script=$( echo "$appjson" | jq -e '.preInstallScript' ) ; then
-		Script="<br><b>Pre-installation script must be RAN before you install: </b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">${Script:1:-1}</a>"
+		scriptexec=$( jq '.tools[] | select(.File=='"$Script"') | .Exec' "$appinfo" )
+		Script="<br><b><a href=\"${repo}tools/${Script:1:-1}\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- ${rawrepo}tools/${Script:1:-1} | ${scriptexec:1:-1}"
 		appjson=$( echo "$appjson" | jq 'del(.preInstallScript)' )
 	else
 		unset Script
 	fi
 
+	# Youtube Video
 	if VideoID=$( echo "$appjson" | jq -e '.videoID' ) ; then
 		VideoURL=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .URL' "$appinfo" )
 		VideoTitle=$( jq '.youtube[] | select(.ID=='"$VideoID"') | .Title' "$appinfo" | tr -d '"')
@@ -74,6 +78,7 @@ for app in template/apps/*.json; do
 		unset VideoID VideoURL
 	fi
 
+	# Extra Scripts
 	if ExtraScript=$( echo "$appjson" | jq -e '.extraScript' ) ; then
 		appjson=$( echo "$appjson" | jq 'del(.extraScript)' )
 		# If only one entry
