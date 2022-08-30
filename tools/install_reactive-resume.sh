@@ -18,7 +18,8 @@ function check_internet() {
 check_internet
 
 echo "Creating directories..."
-sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/uploads || error "Failed to create Reactive-Resume assets directory!"
+sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/uploads || error "Failed to create Reactive-Resume uploads directory!"
+sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/exports || error "Failed to create Reactive-Resume exports directory!"
 sudo mkdir -p /portainer/Files/AppData/Config/reactive-resume/db || error "Failed to create Reactive-Resume database directory!"
 
 echo "Setting permissions..."
