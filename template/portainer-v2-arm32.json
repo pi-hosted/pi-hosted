@@ -236,7 +236,7 @@
 					"name": "PUBLIC_ADD_VIEW"
 				}
 			],
-			"image": "archivebox/archivebox:master",
+			"image": "archivebox/archivebox:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/archivebox.png",
 			"name": "archivebox",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://archivebox.io/\" target=\"_blank\">https://archivebox.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ArchiveBox/ArchiveBox/wiki/Docker\" target=\"_blank\">https://github.com/ArchiveBox/ArchiveBox/wiki/Docker</a><br><br><br>By default an admin user is not created. You can do so by launching a shell in the container and executing 'archivebox manage createsuperuser'. Documentation is Available <a href='https://github.com/ArchiveBox/ArchiveBox/wiki'>here</a>.",
@@ -276,7 +276,7 @@
 					"name": "ARIA2RPCPORT"
 				}
 			],
-			"image": "hurlenko/aria2-ariang",
+			"image": "hurlenko/aria2-ariang:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/ariang.png",
 			"name": "AriaNG",
 			"platform": "linux",
@@ -533,7 +533,7 @@
 			"image": "caddy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/caddy.png",
 			"name": "caddy",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_caddy.sh\" target=\"_blank\">install_caddy.sh</a><br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://caddyserver.com/\" target=\"_blank\">https://caddyserver.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/_/caddy\" target=\"_blank\">https://hub.docker.com/_/caddy</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_caddy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_caddy.sh | bash<br><br>Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go",
 			"platform": "linux",
 			"ports": [
 				"80:80/tcp",
@@ -693,6 +693,37 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://chevereto.com/\" target=\"_blank\">https://chevereto.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/nmtan/chevereto\" target=\"_blank\">https://hub.docker.com/r/nmtan/chevereto</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"tools"
+			],
+			"description": "chrony is a versatile implementation of the Network Time Protocol (NTP). It can synchronise the system clock with NTP servers, reference clocks (e.g. GPS receiver), and manual input using wristwatch and keyboard. It can also operate as an NTPv4 (RFC 5905) server and peer to provide a time service to other computers in the network.",
+			"env": [
+				{
+					"default": "0",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"description": "Additional Example: time1.google.com,time2.google.com,time3.google.com,time4.google.com",
+					"default": "time.cloudflare.com",
+					"label": "NTP_SERVERS",
+					"name": "NTP_SERVERS"
+				}
+			],
+			"image": "cturra/ntp:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/chrony.png",
+			"name": "chrony-ntp",
+			"platform": "linux",
+			"ports": [
+				"123:123/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Chrony NTP",
+			"type": 1,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/cturra/docker-ntp\" target=\"_blank\">https://github.com/cturra/docker-ntp</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/cturra/docker-ntp/blob/main/README.md\" target=\"_blank\">https://github.com/cturra/docker-ntp/blob/main/README.md</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -1005,7 +1036,7 @@
 					"container": "/app/public/conf.yml"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">install_dashy.sh</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://dashy.to\" target=\"_blank\">https://dashy.to</a><br><b>Official Docker Documentation: </b><a href=\"https://dashy.to/docs/quick-start\" target=\"_blank\">https://dashy.to/docs/quick-start</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_dashy.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_dashy.sh | <br><br>"
 		},
 		{
 			"categories": [
@@ -1054,7 +1085,7 @@
 				"Music"
 			],
 			"description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-			"image": "registry.gitlab.com/bockiii/deemix-docker",
+			"image": "registry.gitlab.com/bockiii/deemix-docker:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/deemix.png",
 			"name": "deemix",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://deemix.app/\" target=\"_blank\">https://deemix.app/</a><br><b>Official Docker Documentation: </b><a href=\"https://gitlab.com/Bockiii/deemix-docker\" target=\"_blank\">https://gitlab.com/Bockiii/deemix-docker</a><br><br><br>Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
@@ -1119,7 +1150,7 @@
 					"container": "/downloads"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-deluge\" target=\"_blank\">https://docs.linuxserver.io/images/docker-deluge</a><br><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.deluge-torrent.org/\" target=\"_blank\">https://www.deluge-torrent.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-deluge\" target=\"_blank\">https://docs.linuxserver.io/images/docker-deluge</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IWj1-j2QWvo\" target=\"_blank\">Route Docker Traffic Through VPN Container</a><br><br>"
 		},
 		{
 			"categories": [
@@ -1323,7 +1354,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Drupal",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_drupal.sh\" target=\"_blank\">install_drupal.sh</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.drupal.org/\" target=\"_blank\">https://www.drupal.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration\" target=\"_blank\">https://www.drupal.org/docs/develop/local-server-setup/docker-development-environments/docker-with-solr-cloud-integration/docker-configuration</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_drupal.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_drupal.sh | bash<br><br>"
 		},
 		{
 			"categories": [
@@ -1528,24 +1559,12 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:s6",
+			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
 			"ports": [
 				"8082:80/tcp"
 			],
@@ -1572,17 +1591,29 @@
 				"Other",
 				"Tools"
 			],
-			"description": "[arm] Web File Browser which can be used as a middleware or standalone app.",
-			"image": "filebrowser/filebrowser:latest",
+			"description": "[arm][s6-version] Web File Browser which can be used as a middleware or standalone app.",
+			"image": "filebrowser/filebrowser:s6",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/filebrowser.png",
 			"name": "filebrowser",
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://filebrowser.org/\" target=\"_blank\">https://filebrowser.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://filebrowser.org/installation#docker\" target=\"_blank\">https://filebrowser.org/installation#docker</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=30MYRgCObu8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=4\" target=\"_blank\">Installing JDownloader and File Browser On The Pi Docker Server</a><br><br>The default user and password is admin/admin.",
 			"platform": "linux",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
 			"ports": [
 				"8082:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "FileBrowser",
+			"title": "FileBrowser S6",
 			"type": 1,
 			"volumes": [
 				{
@@ -1765,7 +1796,7 @@
 				"Proxy"
 			],
 			"description": "Simple socks5 server using go-socks5 with authentication options",
-			"image": "serjs/go-socks5-proxy",
+			"image": "serjs/go-socks5-proxy:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/socks5.png",
 			"name": "socks5-proxy",
 			"platform": "linux",
@@ -1775,7 +1806,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Go-Socks5-Proxy",
 			"type": 1,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/serjs/go-socks5-proxy\" target=\"_blank\">https://hub.docker.com/r/serjs/go-socks5-proxy</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IWj1-j2QWvo\" target=\"_blank\">Route Docker Traffic Through VPN Container</a><br><br>"
 		},
 		{
 			"categories": [
@@ -2484,8 +2515,8 @@
 				"Tools"
 			],
 			"description": "Komga is a free and open source comics/mangas/magazines server.",
-			"image": "gotson/komga",
-			"logo": "https://raw.githubusercontent.com/tuta23/pi-hosted/master/images/komga.png",
+			"image": "gotson/komga:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/komga.png",
 			"name": "komga",
 			"platform": "linux",
 			"ports": [
@@ -3049,7 +3080,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "alexta69/metube",
+			"image": "alexta69/metube:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/metube.png",
 			"name": "MeTube",
 			"platform": "linux",
@@ -3788,7 +3819,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager v2 with Mysql and Goaccess Charts [DEPRECATED]",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/nginx-proxy-manager.sh | bash<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
 			"categories": [
@@ -3838,7 +3869,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager v2 with Mysql [DEPRECATED]",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">nginx-proxy-manager.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/#using-mysql-mariadb-database\" target=\"_blank\">https://nginxproxymanager.com/setup/#using-mysql-mariadb-database</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/nginx-proxy-manager.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/nginx-proxy-manager.sh | bash<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
 		},
 		{
 			"categories": [
@@ -3951,6 +3982,25 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nginxproxymanager.com/\" target=\"_blank\">https://nginxproxymanager.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://nginxproxymanager.com/setup/\" target=\"_blank\">https://nginxproxymanager.com/setup/</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/nginx_proxy_manager.md\" target=\"_blank\">nginx_proxy_manager.md</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=yl2Laxbqvo8&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=10\" target=\"_blank\">Installing Nginx Proxy Manager on Docker</a><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools",
+				"Web"
+			],
+			"description": "A free and open source alternative Twitter front-end focused on privacy and performance.",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/nitter.png",
+			"name": "nitter",
+			"repository": {
+				"stackfile": "stack/nitter.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Nitter",
+			"type": 3,
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://nitter.net/\" target=\"_blank\">https://nitter.net/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/zedeus/nitter\" target=\"_blank\">https://github.com/zedeus/nitter</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -4139,7 +4189,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "mbentley/omada-controller:latest-armv7l",
+			"image": "mbentley/omada-controller:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/omada.png",
 			"name": "omada-controller",
 			"platform": "linux",
@@ -4299,7 +4349,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/overseerr:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.png",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/overseerr.jpg",
 			"name": "overseerr",
 			"platform": "linux",
 			"ports": [
@@ -4721,6 +4771,46 @@
 		},
 		{
 			"categories": [
+				"Downloaders"
+			],
+			"description": "Prowlarr is an indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "Time Zone",
+					"name": "TZ"
+				}
+			],
+			"image": "lscr.io/linuxserver/prowlarr:develop",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/prowlarr-banner.png",
+			"name": "prowlarr",
+			"platform": "linux",
+			"ports": [
+				"9696:9696/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "prowlarr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/prowlarr",
+					"container": "/config"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://prowlarr.com\" target=\"_blank\">https://prowlarr.com</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/linuxserver/prowlarr\" target=\"_blank\">https://hub.docker.com/r/linuxserver/prowlarr</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Cloud",
 				"Other"
 			],
@@ -4960,7 +5050,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Raspberry Pi Docker Monitor",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">rpi_docker_monitor.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8\" target=\"_blank\">Raspberry Pi Docker Monitoring</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/rpi_docker_monitor.sh | bash<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8\" target=\"_blank\">Raspberry Pi Docker Monitoring</a><br><br>"
 		},
 		{
 			"categories": [
@@ -5001,6 +5091,55 @@
 				}
 			],
 			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"http://xrdp.org/\" target=\"_blank\">http://xrdp.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-rdesktop\" target=\"_blank\">https://docs.linuxserver.io/images/docker-rdesktop</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Books"
+			],
+			"description": "Readarr is an eBook and audiobook collection manager for Usenet and BitTorrent users.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "Time Zone",
+					"name": "TZ"
+				}
+			],
+			"image": "lscr.io/linuxserver/readarr:develop",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/Readarr.png",
+			"name": "readarr",
+			"platform": "linux",
+			"ports": [
+				"8787:8787/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "readarr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/readarr",
+					"container": "/config"
+				},
+				{
+					"bind": "/mnt/Books",
+					"container": "/books"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/readarr/downloads",
+					"container": "/downloads"
+				}
+			],
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://readarr.com/\" target=\"_blank\">https://readarr.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://wiki.servarr.com/en/readarr\" target=\"_blank\">https://wiki.servarr.com/en/readarr</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5135,7 +5274,7 @@
 			"image": "rustdesk/rustdesk-server-s6:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/rustdesk.png",
 			"name": "rustdesk",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br>Don't forget to open ports 21115 to 21119 in your router.",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://rustdesk.com/\" target=\"_blank\">https://rustdesk.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/rustdesk/rustdesk-server\" target=\"_blank\">https://github.com/rustdesk/rustdesk-server</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=9ln6UFH4z8o\" target=\"_blank\">Rust Desk Open Source Remote Desktop</a><br><br>Don't forget to open ports 21115 to 21119 in your router.",
 			"platform": "linux",
 			"ports": [
 				"21115:21115/tcp",
@@ -5353,7 +5492,7 @@
 					"container": "/share"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11\" target=\"_blank\">Setting up Raspberry Pi Samba Server For File Sharing on Docker</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=PDnqFnnbVHg\" target=\"_blank\">Building NAS with Container</a><br><br>"
 		},
 		{
 			"categories": [
@@ -5565,54 +5704,6 @@
 					"container": "/app/data"
 				}
 			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Video"
-			],
-			"description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/sonarr:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/sonarr-icon.png",
-			"name": "sonarr",
-			"platform": "linux",
-			"ports": [
-				"8989:8989/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Sonarr",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Sonarr",
-					"container": "/config"
-				},
-				{
-					"bind": "/dev/rtc",
-					"container": "/dev/rtc"
-				},
-				{
-					"bind": "/portainer/TV",
-					"container": "/tv"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://sonarr.tv/\" target=\"_blank\">https://sonarr.tv/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-sonarr\" target=\"_blank\">https://docs.linuxserver.io/images/docker-sonarr</a><br><br><br>"
 		},
 		{
 			"categories": [
@@ -5855,7 +5946,7 @@
 			"image": "traefik:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/traefik.png",
 			"name": "traefik",
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://doc.traefik.io/traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/</a><br><b>Official Docker Documentation: </b><a href=\"https://doc.traefik.io/traefik/getting-started/install-traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/getting-started/install-traefik/</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/traefik.sh\" target=\"_blank\">traefik.sh</a><br><br>A simple and lightweight reverse proxy",
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://doc.traefik.io/traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/</a><br><b>Official Docker Documentation: </b><a href=\"https://doc.traefik.io/traefik/getting-started/install-traefik/\" target=\"_blank\">https://doc.traefik.io/traefik/getting-started/install-traefik/</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/traefik.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/traefik.sh | bash<br><br>A simple and lightweight reverse proxy",
 			"platform": "linux",
 			"ports": [
 				"80:80/tcp",
@@ -6281,7 +6372,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "UnPoller Monitor",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://unpoller.com/\" target=\"_blank\">https://unpoller.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">UnPoller-Monitor.md</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/unpoller-install.sh\" target=\"_blank\">unpoller-install.sh</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://unpoller.com/\" target=\"_blank\">https://unpoller.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">https://github.com/novaspirit/pi-hosted/blob/master/docs/UnPoller-Monitor.md</a><br><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/UnPoller-Monitor.md\" target=\"_blank\">UnPoller-Monitor.md</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/unpoller-install.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/unpoller-install.sh | bash<br><br>"
 		},
 		{
 			"categories": [
@@ -6427,7 +6518,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Vikunja With Frontend",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vikunja.io/\" target=\"_blank\">https://vikunja.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy\" target=\"_blank\">https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_vikunja.sh\" target=\"_blank\">install_vikunja.sh</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://vikunja.io/\" target=\"_blank\">https://vikunja.io/</a><br><b>Official Docker Documentation: </b><a href=\"https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy\" target=\"_blank\">https://vikunja.io/docs/full-docker-example/#example-with-nginx-as-proxy</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_vikunja.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_vikunja.sh | bash<br><br>"
 		},
 		{
 			"categories": [
@@ -6511,7 +6602,7 @@
 				"Tools"
 			],
 			"description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-			"image": "benbusby/whoogle-search:0.7.3",
+			"image": "benbusby/whoogle-search:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/whoogle.png",
 			"name": "whoogle",
 			"platform": "linux",
@@ -6527,7 +6618,7 @@
 					"container": "/config"
 				}
 			],
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benbusby/whoogle-search\" target=\"_blank\">https://github.com/benbusby/whoogle-search</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benbusby/whoogle-search#g-manual-docker\" target=\"_blank\">https://github.com/benbusby/whoogle-search#g-manual-docker</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_whoogle.sh\" target=\"_blank\">install_whoogle.sh</a><br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12\" target=\"_blank\">How to Install Whoogle to replace using Google and repo notes</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/benbusby/whoogle-search\" target=\"_blank\">https://github.com/benbusby/whoogle-search</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/benbusby/whoogle-search#g-manual-docker\" target=\"_blank\">https://github.com/benbusby/whoogle-search#g-manual-docker</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_whoogle.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_whoogle.sh | bash<br><br><b>Youtube Video: </b><a href=\"https://www.youtube.com/watch?v=j3ZGxo3ibUs&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=12\" target=\"_blank\">How to Install Whoogle to replace using Google and repo notes</a><br><br>"
 		},
 		{
 			"categories": [
@@ -6822,7 +6913,7 @@
 			"restart_policy": "unless-stopped",
 			"title": "Yourls",
 			"type": 3,
-			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yourls.org/\" target=\"_blank\">https://yourls.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://yourls.org/#Install\" target=\"_blank\">https://yourls.org/#Install</a><br><br><b>Pre-installation script must be RAN before you install: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_yourls.sh\" target=\"_blank\">install_yourls.sh</a><br><br>"
+			"note": "<h3>Template created by Pi-Hosted Series</h3><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://yourls.org/\" target=\"_blank\">https://yourls.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://yourls.org/#Install\" target=\"_blank\">https://yourls.org/#Install</a><br><br><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/install_yourls.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_yourls.sh | <br><br>"
 		},
 		{
 			"categories": [

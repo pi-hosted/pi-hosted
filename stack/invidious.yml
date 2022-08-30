@@ -3,7 +3,10 @@ services:
 
   invidious:
     image: quay.io/invidious/invidious:latest-arm64
-    name: invidious
+    container_name: invidious
+    hostname: invidious
+    networks:
+      - invidious_network
     restart: unless-stopped
     ports:
       - "${PORT}:3000"
@@ -12,13 +15,13 @@ services:
         db:
           dbname: invidious
           user: kemal
-          password: "${DB_PASSWORD}"
+          password: ${DB_PASSWORD}
           host: invidious-db
           port: 5432
         check_tables: true
-        domain: "${DOMAIN}"
+        domain: ${DOMAIN}
         https_only: ${HTTPS_ONLY}
-        external_port: "${EXTERNAL_PORT}"
+        external_port: ${EXTERNAL_PORT}
         popular_enabled: ${POPULAR_ENABLED}
         statistics_enabled: ${STATISTICS_ENABLED}
         registration_enabled: ${REGISTRATION_ENABLED}
@@ -28,9 +31,9 @@ services:
         feed_threads: 1
         default_user_preferences:
           locale: en-US
-          region: "${REGION}"
-          captions: ["", "", ""]
-          dark_mode:
+          region: ${REGION}
+          #captions: ["", "", ""]
+          dark_mode: ${DARK_MODE}
           thin_mode: false
           feed_menu: ["Popular", "Trending", "Subscriptions", "Playlists"]
           default_home: Trending
@@ -46,7 +49,9 @@ services:
 
   invidious-db:
     image: docker.io/library/postgres:14
-    name: invidious-db
+    hostname: invidious-db
+    networks:
+      - invidious_network
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/invidious/dbdata:/var/lib/postgresql/data
@@ -55,6 +60,10 @@ services:
     environment:
       POSTGRES_DB: invidious
       POSTGRES_USER: kemal
-      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+
+networks:
+ invidious_network:
+
