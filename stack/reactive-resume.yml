@@ -15,7 +15,7 @@ services:
       - PUBLIC_FLAG_DISABLE_SIGNUPS=${DISABLE_SIGNUPS}
       - STORAGE_S3_ENABLED=false
       - PUBLIC_URL=${PUBLIC_URL}
-      - PUBLIC_SERVER=${PUBLIC_SERVER_URL}
+      - PUBLIC_SERVER_URL=${PUBLIC_SERVER_URL}
     volumes:
       - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
       - /portainer/Files/AppData/Config/reactive-resume/exports:/home/debian/reactiveresume/server/dist/assets/exports
