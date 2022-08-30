@@ -18,6 +18,7 @@ services:
       - PUBLIC_SERVER=${PUBLIC_SERVER_URL}
     volumes:
       - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
+      - /portainer/Files/AppData/Config/reactive-resume/exports:/home/debian/reactiveresume/server/dist/assets/exports
     ports:
       - ${CLIENT_PORT}:3000
       - ${SERVER_PORT}:3100
