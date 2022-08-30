@@ -31,7 +31,12 @@ This description stripped down from [official-docs](https://github.com/AmruthPil
 * Required: `no`  
 * Description: Google API Key used for fetching Google Fonts, within the resume builder, there's a section where you can pick any font from the Google Fonts Library. To fetch the names and IDs of these fonts, we depend on the Google Fonts API. It does not cost any payment, or the need to enter credit card information to create or use this API. You can get your own key here: [Google Webfonts API](https://developers.google.com/fonts/docs/developer_api). If you do not have a Google API Key, it was make use of the cached response JSON that's stored within the project source. Please note that this cache is not updated and may not have all the latest fonts that Google Fonts has to offer.
 
-#### `ENABLE_S3_STORAGE`
+#### `PUBLIC URL`
 * Required: `yes`
-* Default Value: `false`
-* Description: Disable/enable usage of s3 storage, if you prefer enable S3 storage, please refer official docs, as it will need additional ENV such as `STORAGE_BUCKET, ENDPOINT, etc`
+* The URL where the web facing
+* Sample: http://ipaddress:port or https://somepublic.domain.tld
+
+#### `PUBLIC_SERVER_URL`
+* Required:`yes`
+* The URL where server processing
+* Sample: http://ipaddress:port or https://somepublicserver.domain.tld
