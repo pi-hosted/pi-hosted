@@ -78,7 +78,8 @@
 	],
 	"piHostedDoc": "reactive-resume_installation.md",
 	"repository": {
-		"stackfile64": "stack/reactive-resume.yml",
+		"stackfile_arm64": "stack/reactive-resume.yml",
+		"stackfile_amd64": "stack/reactive-resume.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
 	},
 	"title": "Reactive-Resume",
