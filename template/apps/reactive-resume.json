@@ -31,6 +31,16 @@
 			"name": "DATABASE_PASSWORD"
 		},
 		{
+			"default": "use computer IP and Client port",
+			"label": "PUBLIC_URL",
+			"name": "PUBLIC_URL"
+		},
+		{
+			"default": "use computer IP and Server port",
+			"label": "PUBLIC_SERVER_URL",
+			"name": "PUBLIC_SERVER_URL"
+		},
+		{
 			"default": "leave blank to disable",
 			"label": "GOGLE_API_KEY",
 			"name": "GOOGLE_API_KEY"
@@ -52,8 +62,13 @@
 		},
 		{
 			"default": "7768",
-			"label": "PORT",
-			"name": "PORT"
+			"label": "CLIENT_PORT",
+			"name": "CLIENT_PORT"
+		},
+		{
+			"default": "7769",
+			"label": "SERVER_PORT",
+			"name": "SERVER_PORT"
 		},
 		{
 			"default": "America/New_York",
