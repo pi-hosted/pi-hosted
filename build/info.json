@@ -233,6 +233,5 @@
 			"Description": "Install Invidious",
 			"wget": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/install_invidious.sh"
 		}
-
 	]
 }
