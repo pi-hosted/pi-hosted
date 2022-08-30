@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    image: martadinata666/reactive-resume:v3.5.3
+    image: martadinata666/reactive-resume:v3.6.5
     restart: unless-stopped
     environment:
       - SECRET_KEY=${SECRET_KEY}
@@ -14,10 +14,13 @@ services:
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
       - PUBLIC_FLAG_DISABLE_SIGNUPS=${DISABLE_SIGNUPS}
       - STORAGE_S3_ENABLED=false
+      - PUBLIC_URL=${PUBLIC_URL}
+      - PUBLIC_SERVER=${PUBLIC_SERVER_URL}
     volumes:
       - /portainer/Files/AppData/Config/reactive-resume/uploads:/home/debian/reactiveresume/server/dist/assets/uploads
     ports:
-      - ${PORT}:3000
+      - ${CLIENT_PORT}:3000
+      - ${SERVER_PORT}:3100
 
   db:
     image: postgres:13
