@@ -19,8 +19,8 @@
 	"image_arm32": "httpd:latest",
 	"image_arm64": "httpd:latest",
 	"image_amd64": "httpd:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/httpd.png",
-	"name": "httpd",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/apache-httpd.png",
+	"name": "apache-httpd",
 	"officialDoc": "https://hub.docker.com/_/httpd",
 	"platform": "linux",
 	"ports": [
@@ -28,11 +28,11 @@
 		"8443:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Httpd",
+	"title": "Apache Httpd",
 	"type": 1,
 	"volumes": [
 		{
-			"bind": "/portainer/Files/AppData/Config/Httpd",
+			"bind": "/portainer/Files/AppData/Config/apache-httpd",
 			"container": "/usr/local/apache2/htdocs/"
 		}
 	],
