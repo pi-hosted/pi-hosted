@@ -23,5 +23,5 @@
 	"restart_policy": "unless-stopped",
 	"title": "Cloudflared",
 	"type": 1,
-	"webpage": "https://adguard.com/en/adguard-home/overview.html"
+	"webpage": "https://www.cloudflare.com/products/tunnel/"
 }
