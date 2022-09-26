@@ -16,7 +16,7 @@
 		"85:80/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "Pixel-server to control rgb lights",
+	"title": "Pixel-server",
 	"type": 1,
 	"volumes": [
 		{
