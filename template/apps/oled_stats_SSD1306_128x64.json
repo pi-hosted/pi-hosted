@@ -4,6 +4,16 @@
 		"Other"
 	],
 	"description": "A quick way to display system stats on a 128x64 I2C OLED display.",
+	"env": [
+		{
+			"default": "8:30",
+			"name": "start"
+		},
+		{
+			"default": "23:00",
+			"name": "end"
+		}
+	],
 	"note": "Run this command first to enable is2 communication! sudo raspi-config nonint do_i2c 0",
 	"image_arm32": "macley/oled_stats:latest",
 	"image_arm64": "macley/oled_stats:latest",
