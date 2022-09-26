@@ -1,8 +1,9 @@
 {
 	"categories": [
+		"Monitor",
 		"Other"
 	],
-	"description": "A quick way to display system stats on a 128x64 I2C OLED display.",
+	"description": "RUN THIS COMMAND FIRST! sudo raspi-config nonint do_i2c 0 . A quick way to display system stats on a 128x64 I2C OLED display.",
 	"image_arm32": "macley/oled_stats:latest",
 	"image_arm64": "macley/oled_stats:latest",
 	"image_amd64": "macley/oled_stats:latest",
