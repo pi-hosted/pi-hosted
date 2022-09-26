@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 171 apps | 186 apps | 183 apps | 186 apps |
+| 172 apps | 187 apps | 184 apps | 187 apps |
 
 ---
 
@@ -133,6 +133,7 @@ List of all apps included in this project with info related to it.
 |[Pi-Hole](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
 |[Pi-Hole-Unbound](https://pi-hole.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/chriscrowe/docker-pihole-unbound/tree/master/one-container) | [![](../build/images/red_doc_icon.png)](../docs/pi-hole.md) |  |  |
 |[Piwigo](http://piwigo.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-piwigo) |  |  |  |
+|[Pixel-server to control rgb lights](http://www.penguintutor.com/projects/pixel-server)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Macleykun/pixel-server) | [![](../build/images/red_doc_icon.png)](../docs/pixel-server_setup.md) | [![](../build/images/script_icon.png)](../tools/install_pixel-server.sh) |  |
 |[Plex](https://www.plex.tv/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-plex) |  |  |  |
 |[PostgreSQL](https://www.postgresql.org/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/postgres/) |  |  |  |
 |[Pritunl](https://pritunl.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/goofball222/pritunl) |  |  |  |
