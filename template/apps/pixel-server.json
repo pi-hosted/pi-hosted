@@ -9,6 +9,8 @@
 	"logo": "https://lirp.cdn-website.com/c73f56a6/dms3rep/multi/opt/ir.appnice.controlpad_512x512-640w.png",
 	"name": "pixel-server",
 	"officialDoc": "https://github.com/Macleykun/pixel-server",
+    "piHostedDoc": "pixel-server_setup.md",
+    "preInstallScript": "install_pixel-server.sh",
 	"platform": "linux",
 	"ports": [
 		"85:80/tcp"
