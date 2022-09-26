@@ -38,3 +38,15 @@ You should set:
 - GPIO Pin No (use <https://pinout.xyz/> you want to input the number next to GPIO on the right (not the left)).
 - Brightness (default should be good, but take small steps when setting this value, requires restart of the container!).
 - LED Strip (Very important that you choose the right type, otherwise you're RGB device will show the wrong colors).
+
+## Automation
+
+You can use cron inside the container aswell. You can enable Cheerlights by doing:
+
+```bash
+docker exec -it pixel-server crontab -e
+```
+
+And add: `*/5     *       *       *       *       wget -q -O /opt/pixel-server/customlight.cfg http://api.thingspeak.com/channels/1417/field/2/last.txt`
+
+Save and exit out of the file and container.
