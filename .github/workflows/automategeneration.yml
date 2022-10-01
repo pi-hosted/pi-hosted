@@ -3,7 +3,7 @@ name: joinApps.sh
 on:
   push:
     branches:
-    - "master"
+    - "patch-2"
   #schedule:
   #- cron:  '15 0 * * *'
 env:
