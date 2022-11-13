@@ -22,3 +22,4 @@ services:
   web:
     image: nginx
     network_mode: service:vpn
+ 
