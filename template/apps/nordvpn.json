@@ -64,5 +64,5 @@
 	"title": "nord-vpn",
 	"type": 1,
 	"privileged": true,
-        "webpage": https://github.com/azinchen/nordvpn
+        "webpage": "https://github.com/azinchen/nordvpn"
 }
