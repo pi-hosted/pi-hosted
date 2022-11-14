@@ -6,7 +6,7 @@ function error {
 }
 
 echo "Creating directory"
-sudo mkdir -p /portainer/Files/AppData/Config/TiddlyWiki/ || error ""Failed to set create folder for TiddlyWiki volume!"
+sudo mkdir -p /portainer/Files/AppData/Config/TiddlyWiki/ || error "Failed to set create folder for TiddlyWiki volume!"
 
 echo "Setting permissions"
 sudo chown -R 1000:1000 /portainer/Files/AppData/Config/TiddlyWiki/ || error "Failed to set permissions for TiddlyWiki volume!"
