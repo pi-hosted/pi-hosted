@@ -15,6 +15,7 @@
 		"8080:8080/tcp"
 	],
 	"restart_policy": "unless-stopped",
+	"preInstallScript": "Run this command to make the container work after deploying: sudo chown 1000:1000 /portainer/Files/AppData/Config/TiddlyWiki/",
 	"title": "TiddlyWiki",
 	"type": 1,
 	"volumes": [
