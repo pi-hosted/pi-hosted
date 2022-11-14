@@ -3,7 +3,7 @@
 		"Other",
 		"Tools"
 	],
-	"description": "A unique, non-linear notebook wiki. Run this command to make the container work after deploying: sudo chown 1000:1000 /portainer/Files/AppData/Config/TiddlyWiki/",
+	"description": "A unique, non-linear notebook wiki.",
 	"image_arm32": "nicolaw/tiddlywiki:latest",
 	"image_arm64": "nicolaw/tiddlywiki:latest",
 	"image_amd64": "nicolaw/tiddlywiki:latest",
