@@ -7,8 +7,25 @@ services:
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}?sslmode=prefer
       NODE_ENV: production
+      REDIS_PORT: 6379
       REDIS_HOST: 'redis'
       REDIS_PASSWORD: ${REDIS_PASSWORD}
+      ALPHA_VANTAGE_API_KEY: ???
+      COMPOSE_PROJECT_NAME: ghostfolio
+
+
+
+# POSTGRES
+POSTGRES_DB=ghostfolio-db
+POSTGRES_USER=user
+POSTGRES_PASSWORD=<INSERT_POSTGRES_PASSWORD>
+
+ACCESS_TOKEN_SALT=<INSERT_RANDOM_STRING>
+
+DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}?sslmode=prefer
+JWT_SECRET_KEY=<INSERT_RANDOM_STRING>
+      
+      
     ports:
       - 3333:3333
 
