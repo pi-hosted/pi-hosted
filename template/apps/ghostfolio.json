@@ -43,7 +43,7 @@
 		"stackfile_arm32": "stack/ghostfolio.yml",
 		"stackfile_arm64": "stack/ghostfolio.yml",
 		"stackfile_amd64": "stack/ghostfolio.yml",
-		"url": "https://github.com/Macleykun/pi-hosted/"
+		"url": "https://github.com/pi-hosted/pi-hosted/"
 	},
 	"restart_policy": "unless-stopped",
 	"title": "Ghostfolio",
