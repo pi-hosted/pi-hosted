@@ -1897,7 +1897,7 @@
 					"name": "POSTGRES_USER"
 				},
 				{
-					"default": "KCTTZ&4&7XEWThjjEN^eYx!m$%4ERfsP6",
+					"default": "r2sp88fzvjnj9e24maycjv6e7kukj8wurcmt",
 					"label": "POSTGRES_PASSWORD",
 					"name": "POSTGRES_PASSWORD"
 				},
