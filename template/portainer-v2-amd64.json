@@ -2264,7 +2264,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/ghostfolio.yml",
-				"url": "https://github.com/Macleykun/pi-hosted/"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Ghostfolio",
