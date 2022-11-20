@@ -5934,6 +5934,73 @@
 			"categories": [
 				"Downloaders"
 			],
+			"description": "Popular torrent client with a webui for ease of use.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "America/New_York",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "50",
+					"label": "MAX_FILE_UPLOADS",
+					"name": "MAX_FILE_UPLOADS"
+				},
+				{
+					"default": "info",
+					"label": "RT_LOG_LEVEL",
+					"name": "RT_LOG_LEVEL"
+				},
+				{
+					"default": "erasedata,httprpc",
+					"label": "RU_REMOVE_CORE_PLUGINS",
+					"name": "RU_REMOVE_CORE_PLUGINS"
+				}
+			],
+			"image": "crazymax/rtorrent-rutorrent:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
+			"name": "rutorrent",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/Novik/ruTorrent\" target=\"_blank\">https://github.com/Novik/ruTorrent</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/crazy-max/docker-rtorrent-rutorrent\" target=\"_blank\">https://github.com/crazy-max/docker-rtorrent-rutorrent</a><br><br><br>For ruTorrent basic auth, XMLRPC through nginx and WebDAV on completed downloads, you can populate .htpasswd files with the following command:\\ndocker run --rm -it httpd:2.4-alpine htpasswd -Bbn <username> <password> >> $(pwd)/passwd/webdav.htpasswd",
+			"platform": "linux",
+			"ports": [
+				"6881:6881/udp",
+				"8000:8000/tcp",
+				"8080:8080/tcp",
+				"9000:9000/tcp",
+				"50000:50000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "ruTorrent",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/ruTorrent/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/ruTorrent/passwd",
+					"container": "/passwd"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders"
+			],
 			"description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
 			"env": [
 				{
