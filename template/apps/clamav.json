@@ -1,0 +1,31 @@
+{
+	"categories": [
+		"Other",
+		"Anitvirus"
+	],
+	"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+	"image_arm32": "mkodockx/docker-clamav:alpine",
+	"image_arm64": "mkodockx/docker-clamav:alpine",
+	"image_amd64": "mkodockx/docker-clamav:alpine",
+	"logo": "http://www.clamav.net/assets/clamav-trademark.png",
+	"name": "clamav",
+	"officialDoc": "https://hub.docker.com/r/mkodockx/docker-clamav",
+	"platform": "linux",
+	"ports": [
+		"3310:3310"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Clamav",
+	"type": 1,
+	"volumes": [
+		{
+      "bind": "/portainer/Files/AppData/Config/clamav/config",
+			"container": "/etc/clamav"
+		},
+		{
+      "bind": "/portainer/Files/AppData/Config/clamav/virus_definitions",
+			"container": "/var/lib/clamav"
+		}
+	],
+	"webpage": "https://docs.clamav.net/"
+}
