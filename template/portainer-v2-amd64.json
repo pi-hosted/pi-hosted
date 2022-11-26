@@ -967,6 +967,14 @@
 			"type": 1,
 			"volumes": [
 				{
+					"bind": "/etc/timezone",
+					"container": "/etc/timezone"
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime"
+				},
+				{
 					"bind": "/portainer/Files/AppData/Config/clamav/config",
 					"container": "/etc/clamav"
 				},
