@@ -19,11 +19,19 @@
 	"type": 1,
 	"volumes": [
 		{
-      "bind": "/portainer/Files/AppData/Config/clamav/config",
+			"bind": "/etc/timezone",
+			"container": "/etc/timezone"
+		},
+		{
+			"bind": "/etc/localtime",
+			"container": "/etc/localtime"
+		},
+		{
+	      		"bind": "/portainer/Files/AppData/Config/clamav/config",
 			"container": "/etc/clamav"
 		},
 		{
-      "bind": "/portainer/Files/AppData/Config/clamav/virus_definitions",
+      			"bind": "/portainer/Files/AppData/Config/clamav/virus_definitions",
 			"container": "/var/lib/clamav"
 		}
 	],
