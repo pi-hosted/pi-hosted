@@ -954,13 +954,13 @@
 				"Other",
 				"Anitvirus"
 			],
-			"description": "[Adguardhome-sync](https://github.com/bakito/adguardhome-sync/) is a tool to synchronize AdGuardHome config to replica instances.",
+			"description": "ClamAV® is an open source antivirus engine for detecting trojans, viruses, malware & other malicious threats.",
 			"image": "mkodockx/docker-clamav:alpine",
 			"logo": "http://www.clamav.net/assets/clamav-trademark.png",
 			"name": "clamav",
 			"platform": "linux",
 			"ports": [
-				"3310:3310"
+				"3310:3310/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Clamav",
