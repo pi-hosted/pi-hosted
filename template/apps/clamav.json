@@ -9,7 +9,9 @@
 	"image_amd64": "mkodockx/docker-clamav:alpine",
 	"logo": "http://www.clamav.net/assets/clamav-trademark.png",
 	"name": "clamav",
+	
 	"officialDoc": "https://hub.docker.com/r/mkodockx/docker-clamav",
+	"preInstallScript": "install_clamav.sh",
 	"platform": "linux",
 	"ports": [
 		"3310:3310/tcp"
