@@ -10,7 +10,7 @@
 	"officialDoc": "https://hub.docker.com/r/jlesage/handbrake",
 	"platform": "linux",
 	"ports": [
-		"5800:5800/udp"
+		"5800:5800/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "HandBrake",
