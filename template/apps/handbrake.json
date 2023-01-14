@@ -1,0 +1,37 @@
+{
+	"categories": [
+		"Other",
+		"Tools"
+	],
+	"description": "HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.",
+	"image_amd64": "jlesage/handbrake:latest",
+	"logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/HandBrake_Icon.png",
+	"name": "handbrake",
+	"officialDoc": "https://hub.docker.com/r/jlesage/handbrake",
+	"platform": "linux",
+	"ports": [
+		"5800:5800/udp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "HandBrake",
+	"type": 1,
+	"volumes": [
+		{
+            "bind": "/portainer/Files/AppData/Config/HandBrake/config",
+			"container": "/config"
+		},
+		{
+            "bind": "/portainer/Files/AppData/Config/HandBrake/storage",
+            "container": "/storage"
+        },
+		{
+            "bind": "/portainer/Files/AppData/Config/HandBrake/watch",
+            "container": "/watch"
+        },
+		{
+            "bind": "/portainer/Files/AppData/Config/HandBrake/output",
+			"container": "/output"
+		}
+	],
+	"webpage": "https://handbrake.fr/docs/"
+}
