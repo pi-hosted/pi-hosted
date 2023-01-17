@@ -14,7 +14,7 @@ services:
     expose:
       - 8080
     hostname: rpi-cadvisor
-    image: zcube/cadvisor:latest
+    image: gcr.io/cadvisor/cadvisor:v0.47.0
     ipc: shareable
     networks:
       - rpimonitor_default
