@@ -22,7 +22,7 @@
 			"default": "Your/Timezone",
 			"label": "Timezone",
 			"name": "TZ"
-		},
+		}
   ],
 	"volumes": [
 		{
