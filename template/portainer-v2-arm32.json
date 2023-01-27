@@ -2825,7 +2825,7 @@
 				"Library",
 				"Books"
 			],
-			"description": "avita is a fast, feature rich, cross platform reading server.",
+			"description": "Kavita is a fast, feature rich, cross platform reading server.",
 			"image": "kizaing/kavita:latest",
 			"logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
 			"name": "Kavita",
