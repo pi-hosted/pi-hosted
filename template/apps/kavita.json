@@ -3,7 +3,7 @@
 		"Library",
 		"Books"
 	],
-	"description": "avita is a fast, feature rich, cross platform reading server.",
+	"description": "Kavita is a fast, feature rich, cross platform reading server.",
 	"image_arm32": "kizaing/kavita:latest",
 	"image_arm64": "kizaing/kavita:latest",
 	"image_amd64": "kizaing/kavita:latest",
