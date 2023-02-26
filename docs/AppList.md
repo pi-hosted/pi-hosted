@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 188 apps | 212 apps | 212 apps | 214 apps |
+| 188 apps | 212 apps | 213 apps | 215 apps |
 
 ---
 
