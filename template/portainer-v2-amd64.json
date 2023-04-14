@@ -2763,6 +2763,42 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.",
+			"image": "jlesage/handbrake:latest",
+			"logo": "https://upload.wikimedia.org/wikipedia/commons/d/d9/HandBrake_Icon.png",
+			"name": "handbrake",
+			"platform": "linux",
+			"ports": [
+				"5800:5800/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "HandBrake",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/HandBrake/config",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/HandBrake/storage",
+					"container": "/storage"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/HandBrake/watch",
+					"container": "/watch"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/HandBrake/output",
+					"container": "/output"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://handbrake.fr/docs/\" target=\"_blank\">https://handbrake.fr/docs/</a><br><b>Official Docker Documentation: </b><a href=\"https://hub.docker.com/r/jlesage/handbrake\" target=\"_blank\">https://hub.docker.com/r/jlesage/handbrake</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Music"
 			],
 			"description": null,
