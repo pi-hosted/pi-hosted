@@ -53,9 +53,9 @@
 	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/immich.png",
 	"name": "Immich",
 	"officialDoc": "https://immich.app/docs/overview/introduction",
-	"piHostedDoc": "photoprism.md",
 	"platform": "linux",
 	"repository": {
+		"stackfile_arm32": "stack/immich.yml",
 		"stackfile_arm64": "stack/immich.yml",
 		"stackfile_amd64": "stack/immich.yml",
 		"url": "https://github.com/pi-hosted/pi-hosted"
