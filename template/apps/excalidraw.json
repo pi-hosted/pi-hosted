@@ -1,0 +1,18 @@
+{
+	"categories": [
+		"Productivity"
+	],
+	"description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+	"image_amd64": "excalidraw/excalidraw:latest",
+	"logo": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/.github/assets/logo.png",
+	"name": "excalidraw",
+	"officialDoc": "https://docs.excalidraw.com",
+	"platform": "linux",
+	"ports": [
+		"5000:80/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Excalidraw",
+	"type": 1,
+	"webpage": "https://excalidraw.com"
+}
