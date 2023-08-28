@@ -1978,6 +1978,23 @@
 		},
 		{
 			"categories": [
+				"Productivity"
+			],
+			"description": "Virtual whiteboard for sketching hand-drawn like diagrams",
+			"image": "excalidraw/excalidraw:latest",
+			"logo": "https://raw.githubusercontent.com/excalidraw/excalidraw/master/.github/assets/logo.png",
+			"name": "excalidraw",
+			"platform": "linux",
+			"ports": [
+				"5000:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Excalidraw",
+			"type": 1,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://excalidraw.com\" target=\"_blank\">https://excalidraw.com</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.excalidraw.com\" target=\"_blank\">https://docs.excalidraw.com</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools"
 			],
