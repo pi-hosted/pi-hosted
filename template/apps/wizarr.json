@@ -1,0 +1,55 @@
+{
+	"categories": [
+		"Video",
+		"Music",
+		"Photos",
+		"Management"
+	],
+	"description": "Wizarr is a automatic user invitation system for Plex and Jellyfin. Create a unique link and share it to a user and they will be invited to your Media Server after they complete there signup proccess! They can even be guided to download the clients and read instructions on how to use your media software!",
+	"env": [
+		{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "1000",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"default": "America/New_York",
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "false",
+			"label": "DISABLE_BUILTIN_AUTH",
+			"name": "DISABLE_BUILTIN_AUTH"
+		},
+		{
+			"default": "",
+			"label": "APP_URL",
+			"name": "APP_URL"
+		}
+	],
+	"image_arm64": "ghcr.io/wizarrrr/wizarr:latest",
+	"image_amd64": "ghcr.io/wizarrrr/wizarr:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/wizarr.png",
+	"name": "wizarr",
+	"officialDoc": "https://github.com/Wizarrrr/wizarr",
+	"platform": "linux",
+	"ports": [
+		"5690:5690/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "Wizarr",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/Wizarr/database",
+			"container": "/data/database"
+		}
+	],
+	"webpage": "https://github.com/Wizarrrr/wizarr"
+}
