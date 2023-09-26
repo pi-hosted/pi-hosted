@@ -39,8 +39,9 @@ services:
       - GF_PATHS_LOGS=/var/log/grafana
       - GF_PATHS_PLUGINS=/var/lib/grafana/plugins
       - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
-      - GF_RENDERING_SERVER_URL=http://renderer:8081/render
-      - GF_RENDERING_CALLBACK_URL=http://grafana:3000/
+      - GF_FEATURE_TOGGLES_ENABLE=publicDashboards
+      - GF_RENDERING_SERVER_URL=http://monitoring-grafana-renderer:8081/render
+      - GF_RENDERING_CALLBACK_URL=http://monitoring-grafana:3000/
     hostname: rpi-grafana
     image: grafana/grafana:latest
     networks:
