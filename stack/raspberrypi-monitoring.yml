@@ -39,6 +39,8 @@ services:
       - GF_PATHS_LOGS=/var/log/grafana
       - GF_PATHS_PLUGINS=/var/lib/grafana/plugins
       - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - GF_RENDERING_SERVER_URL=http://renderer:8081/render
+      - GF_RENDERING_CALLBACK_URL=http://grafana:3000/
     hostname: rpi-grafana
     image: grafana/grafana:latest
     networks:
@@ -51,6 +53,12 @@ services:
       - /portainer/Files/AppData/Config/grafana/data:/var/lib/grafana
       - /portainer/Files/AppData/Config/grafana/grafana.ini:/etc/grafana/grafana.ini
       - /portainer/Files/AppData/Config/grafana/provisioning:/etc/grafana/provisioning
+
+  renderer:
+    container_name: monitoring-grafana-renderer
+    image: adejong/grafana-image-renderer-pi:1.0.8-beta2
+    ports:
+    - 9981
 
   node-exporter:
     container_name: monitoring-node-exporter
