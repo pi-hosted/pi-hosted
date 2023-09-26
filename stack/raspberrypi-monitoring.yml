@@ -58,7 +58,7 @@ services:
     container_name: monitoring-grafana-renderer
     image: adejong/grafana-image-renderer-pi:1.0.8-beta2
     ports:
-    - 9981
+    - 8081
 
   node-exporter:
     container_name: monitoring-node-exporter
