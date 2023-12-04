@@ -49,7 +49,7 @@
 	"platform": "linux",
 	"ports": [
 		"8822:80/tcp",
-    "8844:443/tcp"
+		"8844:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
 	"title": "LinkStack",
