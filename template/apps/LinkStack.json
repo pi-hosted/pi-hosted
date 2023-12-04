@@ -54,6 +54,5 @@
 	"restart_policy": "unless-stopped",
 	"title": "LinkStack",
 	"type": 1,
-	],
 	"webpage": "https://linkstack.org/"
 }
