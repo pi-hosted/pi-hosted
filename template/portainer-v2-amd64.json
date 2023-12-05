@@ -4744,6 +4744,30 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Web"
+			],
+			"description": "A privacy-first, lightweight note-taking service.",
+			"image": "ghcr.io/usememos/memos:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/memos-icon.png",
+			"name": "memos",
+			"platform": "linux",
+			"ports": [
+				"5230:5230/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Memos",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Memos",
+					"container": "/var/opt/memos"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://usememos.com\" target=\"_blank\">https://usememos.com</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/usememos/memos\" target=\"_blank\">https://github.com/usememos/memos</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Downloader"
 			],
 			"description": "Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites (https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)",

@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 226 apps | 228 apps | 231 apps |
+| 106 apps | 227 apps | 229 apps | 232 apps |
 
 ---
 
@@ -122,6 +122,7 @@ List of all apps included in this project with info related to it.
 |[MariaDB](https://mariadb.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-mariadb) |  |  |  |
 |[Mealie](https://hay-kot.github.io/mealie/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hay-kot.github.io/mealie/documentation/getting-started/install/) |  |  |  |
 |[Medusa](https://pymedusa.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-medusa) |  |  |  |
+|[Memos](https://usememos.com)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/usememos/memos) |  |  |  |
 |[MeTube](https://hub.docker.com/r/alexta69/metube)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/alexta69/metube) |  |  |  |
 |[Minecraft Server](https://www.minecraft.net/en-us)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/itzg/docker-minecraft-server#using-docker-compose) |  |  |  |
 |[Minetest](https://www.minetest.net/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-minetest) |  |  |  |
