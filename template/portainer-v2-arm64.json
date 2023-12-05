@@ -3091,7 +3091,7 @@
 				"Dashboard"
 			],
 			"description": "Homepage helps you organize your self-hosted services by making them accessible from a single place",
-			"image": "ghcr.io/benphelps/homepage:latest",
+			"image": "ghcr.io/gethomepage/homepage:latest",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/homepage.png",
 			"name": "Homepage",
 			"platform": "linux",
@@ -4207,6 +4207,62 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Web"
+			],
+			"description": "The Ultimate Link Management Solution",
+			"env": [
+				{
+					"default": "name@domain.tld",
+					"label": "SERVER_ADMIN",
+					"name": "SERVER_ADMIN"
+				},
+				{
+					"default": "HTTP_Domain",
+					"label": "HTTP_SERVER_NAME",
+					"name": "HTTP_SERVER_NAME"
+				},
+				{
+					"default": "HTTPS_Domain",
+					"label": "HTTPS_SERVER_NAME",
+					"name": "HTTPS_SERVER_NAME"
+				},
+				{
+					"default": "info",
+					"label": "LOG_LEVEL",
+					"name": "LOG_LEVEL"
+				},
+				{
+					"default": "Europe/London",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "256M",
+					"label": "PHP_MEMORY_LIMIT",
+					"name": "PHP_MEMORY_LIMIT"
+				},
+				{
+					"default": "8M",
+					"label": "UPLOAD_MAX_FILESIZE",
+					"name": "UPLOAD_MAX_FILESIZE"
+				}
+			],
+			"image": "linkstackorg/linkstack:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/linkstack-icon.svg",
+			"name": "LinkStack",
+			"platform": "linux",
+			"ports": [
+				"8822:80/tcp",
+				"8844:443/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "LinkStack",
+			"type": 1,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://linkstack.org/\" target=\"_blank\">https://linkstack.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linkstackorg/linkstack#readme\" target=\"_blank\">https://github.com/linkstackorg/linkstack#readme</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Tools",
 				"Productivity"
 			],
@@ -4586,6 +4642,30 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://pymedusa.com/\" target=\"_blank\">https://pymedusa.com/</a><br><b>Official Docker Documentation: </b><a href=\"https://docs.linuxserver.io/images/docker-medusa\" target=\"_blank\">https://docs.linuxserver.io/images/docker-medusa</a><br><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Web"
+			],
+			"description": "A privacy-first, lightweight note-taking service.",
+			"image": "ghcr.io/usememos/memos:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/memos-icon.png",
+			"name": "memos",
+			"platform": "linux",
+			"ports": [
+				"5230:5230/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Memos",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Memos",
+					"container": "/var/opt/memos"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://usememos.com\" target=\"_blank\">https://usememos.com</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/usememos/memos\" target=\"_blank\">https://github.com/usememos/memos</a><br><br><br>"
 		},
 		{
 			"categories": [
