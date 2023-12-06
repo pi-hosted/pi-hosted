@@ -4246,16 +4246,6 @@
 					"default": "8M",
 					"label": "UPLOAD_MAX_FILESIZE",
 					"name": "UPLOAD_MAX_FILESIZE"
-				},
-				{
-					"default": "1000",
-					"label": "GID",
-					"name": "GID"
-				},
-				{
-					"default": "1000",
-					"label": "UID",
-					"name": "UID"
 				}
 			],
 			"image": "linkstackorg/linkstack:latest",
@@ -4267,7 +4257,7 @@
 				"8844:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "LinkStack",
+			"title": "linkstack",
 			"type": 1,
 			"volumes": [
 				{
