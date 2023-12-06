@@ -6,7 +6,7 @@
 	"description": "A privacy-first, lightweight note-taking service.",
 	"image_arm64": "ghcr.io/usememos/memos:latest",
 	"image_amd64": "ghcr.io/usememos/memos:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/memos-icon.png",
+	"logo": "https://raw.githubusercontent.com/usememos/memos/main/web/public/logo.png",
 	"name": "memos",
 	"officialDoc": "https://github.com/usememos/memos",
 	"platform": "linux",

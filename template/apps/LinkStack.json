@@ -43,7 +43,7 @@
 	],
 	"image_arm64": "linkstackorg/linkstack:latest",
 	"image_amd64": "linkstackorg/linkstack:latest",
-	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/linkstack-icon.svg",
+	"logo": "https://raw.githubusercontent.com/LinkStackOrg/branding/main/logo/png/logo.png",
 	"name": "LinkStack",
 	"officialDoc": "https://github.com/linkstackorg/linkstack#readme",
 	"platform": "linux",
