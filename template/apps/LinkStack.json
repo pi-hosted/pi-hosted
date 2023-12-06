@@ -52,7 +52,7 @@
 		"8844:443/tcp"
 	],
 	"restart_policy": "unless-stopped",
-	"title": "LinkStack",
+	"title": "linkstack",
 	"type": 1,
 	"volumes": [
 		{
