@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 227 apps | 229 apps | 232 apps |
+| 106 apps | 228 apps | 230 apps | 233 apps |
 
 ---
 
@@ -201,6 +201,7 @@ List of all apps included in this project with info related to it.
 |[Shiori](https://github.com/go-shiori/shiori)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nicholaswilde/docker-shiori) |  |  |  |
 |[SickChill](https://docs.linuxserver.io/images/docker-sickchill)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://sickchill.github.io/) |  |  |  |
 |[SickGear](https://github.com/SickGear/SickGear/wiki)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sickgear) |  |  |  |
+|[Slash](https://github.com/yourselfhosted/slash)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/yourselfhosted/slash) |  |  |  |
 |[SmokePing](https://oss.oetiker.ch/smokeping/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-smokeping) |  |  |  |
 |[Snippet-box](https://github.com/pawelmalak/snippet-box)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/pawelmalak/snippet-box#with-docker) |  |  | [![My Most used container! Snippet Box](../build/images/yt-badge-novaspirit.png "My Most used container! Snippet Box")](https://www.youtube.com/watch?v=v-jUyB3fvAo) |
 |[Sonarr](https://sonarr.tv/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-sonarr) |  |  |  |
