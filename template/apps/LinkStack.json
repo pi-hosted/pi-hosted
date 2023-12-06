@@ -54,11 +54,5 @@
 	"restart_policy": "unless-stopped",
 	"title": "linkstack",
 	"type": 1,
-	"volumes": [
-		{
-			"bind": "/portainer/Files/AppData/Config/Linkstack",
-			"container": "/htdocs"
-		}
-	],
 	"webpage": "https://linkstack.org/"
 }
