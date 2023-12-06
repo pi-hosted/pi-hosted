@@ -114,7 +114,7 @@ List of all apps included in this project with info related to it.
 |[LibreSpeed](https://librespeed.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-librespeed) |  |  |  |
 |[lidarr](https://lidarr.audio/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lidarr) |  |  |  |
 |[Lingva Translate](https://lingva.ml/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/TheDavidDelta/lingva-translate) |  |  |  |
-|[]()|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|| [![](../build/images/blue_doc_icon.png)]() | [![](../build/images/red_doc_icon.png)](../docs/) | [![](../build/images/script_icon.png)](../tools/) | [![](../build/images/yt-badge-.png "")]() |
+|[LinkStack](https://linkstack.org/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/linkstackorg/linkstack#readme) |  |  |  |
 |[LLDAP](https://github.com/nitnelave/lldap)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/nitnelave/lldap) |  | [![](../build/images/script_icon.png)](../tools/install_lldap.sh) |  |
 |[Lychee](https://lycheeorg.github.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
 |[Lychee With Mariadb](https://lycheeorg.github.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-lychee) |  |  |  |
