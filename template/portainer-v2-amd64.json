@@ -4358,12 +4358,6 @@
 			"restart_policy": "unless-stopped",
 			"title": "linkstack",
 			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Linkstack",
-					"container": "/htdocs"
-				}
-			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://linkstack.org/\" target=\"_blank\">https://linkstack.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/linkstackorg/linkstack#readme\" target=\"_blank\">https://github.com/linkstackorg/linkstack#readme</a><br><br><br>"
 		},
 		{
