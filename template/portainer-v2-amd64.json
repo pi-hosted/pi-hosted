@@ -8207,6 +8207,30 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Web"
+			],
+			"description": "Slash is an open source, self-hosted bookmarks and link sharing platform. It allows you to organize your links with tags, and share them with custom shortened URLs. Slash also supports team sharing of link libraries for easy collaboration.",
+			"image": "yourselfhosted/slash:latest",
+			"logo": "https://raw.githubusercontent.com/yourselfhosted/slash/main/frontend/web/public/logo.png",
+			"name": "slash",
+			"platform": "linux",
+			"ports": [
+				"5231:5231/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Slash",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Slash",
+					"container": "/var/opt//slash"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/yourselfhosted/slash\" target=\"_blank\">https://github.com/yourselfhosted/slash</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/yourselfhosted/slash\" target=\"_blank\">https://github.com/yourselfhosted/slash</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Management"
 			],
 			"description": null,
