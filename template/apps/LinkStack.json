@@ -59,6 +59,6 @@
 			"bind": "/portainer/Files/AppData/Config/Linkstack",
 			"container": "/htdocs"
 		}
-	]
+	],
 	"webpage": "https://linkstack.org/"
 }
