@@ -39,16 +39,6 @@
 			"default": "8M",
 			"label": "UPLOAD_MAX_FILESIZE",
 			"name": "UPLOAD_MAX_FILESIZE"
-		},
-		{
-			"default": "1000",
-			"label": "GID",
-			"name": "GID"
-		},
-		{
-			"default": "1000",
-			"label": "UID",
-			"name": "UID"
 		}
 	],
 	"image_arm64": "linkstackorg/linkstack:latest",
