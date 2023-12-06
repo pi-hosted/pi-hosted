@@ -4749,7 +4749,7 @@
 			],
 			"description": "A privacy-first, lightweight note-taking service.",
 			"image": "ghcr.io/usememos/memos:latest",
-			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/memos-icon.png",
+			"logo": "https://raw.githubusercontent.com/usememos/memos/main/web/public/logo.png",
 			"name": "memos",
 			"platform": "linux",
 			"ports": [
