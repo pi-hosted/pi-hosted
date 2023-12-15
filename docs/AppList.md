@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 228 apps | 230 apps | 233 apps |
+| 106 apps | 229 apps | 231 apps | 234 apps |
 
 ---
 
@@ -35,6 +35,7 @@ List of all apps included in this project with info related to it.
 |[Clamav](https://docs.clamav.net/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/mkodockx/docker-clamav) |  | [![](../build/images/script_icon.png)](../tools/install_clamav.sh) |  |
 |[Cloudflare DDNS](https://www.cloudflare.com/en-gb/learning/dns/glossary/dynamic-dns/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/favonia/cloudflare-ddns/) |  |  |  |
 |[Cloudflared Tunnel](https://www.cloudflare.com/products/tunnel/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/) |  |  |  |
+|[Collabora Online Development Edition (CODE)](https://www.collaboraoffice.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://sdk.collaboraonline.com/docs/installation/CODE_Docker_image.html) |  |  |  |
 |[Code Server](https://coder.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-code-server) |  |  |  |
 |[Codiad](http://codiad.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/Codiad/Codiad/wiki/Quick-installation-using-Docker) |  |  |  |
 |[COPS](https://blog.slucas.fr/projects/calibre-opds-php-server/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-cops) |  |  |  |
