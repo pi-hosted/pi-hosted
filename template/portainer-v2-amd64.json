@@ -232,7 +232,7 @@
 			"description": "A Fauxmo frontend that facilitates multi-device control via Alexa services by emulating wemo devices, enabling users to turn computers on/off seamlessly using voice commands.",
 			"image": "cristianeduardmihai/alexa-wol:latest",
 			"logo": "https://raw.githubusercontent.com/CristianEduardMihai/alexa-wol/main/images/logo.jpg",
-			"name": "Alexa Wake On Lan",
+			"name": "Alexa-Wake-On-Lan",
 			"platform": "linux",
 			"network": "host",
 			"restart_policy": "unless-stopped",
@@ -3901,6 +3901,58 @@
 		},
 		{
 			"categories": [
+				"Backup",
+				"CMD",
+				"Web",
+				"Tools"
+			],
+			"description": "Joplin Server is a web app that allows you to sync and share notes with Joplin, a popular note-taking app.",
+			"env": [
+				{
+					"default": "http://localhost:22300",
+					"label": "URL",
+					"name": "URL"
+				},
+				{
+					"default": "22300",
+					"label": "APP_PORT",
+					"name": "__PORT__"
+				},
+				{
+					"default": "joplin",
+					"label": "POSTGRES_USER",
+					"name": "POSTGRES_USER"
+				},
+				{
+					"default": "joplin",
+					"label": "POSTGRES_DB",
+					"name": "POSTGRES_DB"
+				},
+				{
+					"default": "joplin",
+					"label": "POSTGRES_DATABASE",
+					"name": "POSTGRES_DATABASE"
+				},
+				{
+					"default": "joplin",
+					"label": "POSTGRES_PASSWORD",
+					"name": "POSTGRES_PASSWORD"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/joplin.png",
+			"name": "joplin-server",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/joplin-server.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/master/"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Joplin server",
+			"type": 3,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hub.docker.com/r/etechonomy/joplin-server\" target=\"_blank\">https://hub.docker.com/r/etechonomy/joplin-server</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/etechonomy/joplin-server\" target=\"_blank\">https://github.com/etechonomy/joplin-server</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Utilities",
 				"tools"
 			],
@@ -5837,7 +5889,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "jc21/nginx-proxy-manager:v3-develop",
+			"image": "jc21/nginx-proxy-manager:v3",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/proxy_mgr.png",
 			"name": "nginx-proxy-manager-v3",
 			"platform": "linux",
@@ -8124,6 +8176,38 @@
 				}
 			],
 			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://www.samba.org/\" target=\"_blank\">https://www.samba.org/</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/dperson/samba\" target=\"_blank\">https://github.com/dperson/samba</a><br><br><br><b>Youtube Videos:</b><br><ul><li><a href=https://www.youtube.com/watch?v=2zZ3_1GRWrM&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=11 target=\"_blank\">Novaspirit Tech - Setting up Raspberry Pi Samba Server For File Sharing on Docker</a></li><li><a href=https://www.youtube.com/watch?v=9ln6UFH4z8o target=\"_blank\">Novaspirit Tech - Building NAS with Container</a></li></ul><br><br>"
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "WebUI for smartd S.M.A.R.T monitoring",
+			"image": "ghcr.io/analogj/scrutiny:master-omnibus",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/scrutiny.png",
+			"name": "scrutiny",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><br><br>Set your port (default: 8080) and deploy the container. Edit container, enable SYS_RAWIO capability, add device /dev/sda in host and container field, finaly deploy the container again.",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "scrutiny",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/config",
+					"container": "/opt/scrutiny/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/influxdb",
+					"container": "/opt/scrutiny/influxdb"
+				},
+				{
+					"bind": "/run/udev",
+					"container": "/run/udev"
+				}
+			]
 		},
 		{
 			"categories": [
