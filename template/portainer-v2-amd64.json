@@ -9527,6 +9527,40 @@
 		},
 		{
 			"categories": [
+				"Finance"
+			],
+			"description": "Open-Source Personal Subscription Tracker.",
+			"image": "bellamy/wallos:latest",
+			"logo": "https://raw.githubusercontent.com/ellite/Wallos/main/images/wallossolidwhite.png",
+			"name": "wallos",
+			"platform": "linux",
+			"env": [
+				{
+					"default": "Europe/London",
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"port": [
+				"8282:80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Wallos",
+			"type": 3,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Wallos/db",
+					"container": "/var/www/html/db"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Wallos/logos",
+					"container": "/var/www/html/images/uploads/logos"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/ellite/Wallos\" target=\"_blank\">https://github.com/ellite/Wallos</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Other",
 				"Tools",
 				"Maintenance"
