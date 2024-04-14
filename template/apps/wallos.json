@@ -21,7 +21,7 @@
 	],
 	"restart_policy": "unless-stopped",
 	"title": "Wallos",
-	"type": 3,
+	"type": 1,
 	"volumes": [
 		{
 			"bind": "/portainer/Files/AppData/Config/Wallos/db",
