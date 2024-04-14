@@ -9541,7 +9541,7 @@
 					"name": "TZ"
 				}
 			],
-			"port": [
+			"ports": [
 				"8282:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
