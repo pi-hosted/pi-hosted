@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 106 apps | 231 apps | 234 apps | 237 apps |
+| 105 apps | 231 apps | 234 apps | 237 apps |
 
 ---
 
@@ -25,7 +25,7 @@ List of all apps included in this project with info related to it.
 |[Bazarr](https://www.bazarr.media/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://wiki.bazarr.media/Getting-Started/Installation/Docker/docker/) |  |  |  |
 |[Beets](https://beets.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-beets) |  |  |  |
 |[Bind9](https://hub.docker.com/r/ubuntu/bind9)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/r/ubuntu/bind9) |  | [![](../build/images/script_icon.png)](../tools/install_bind9.sh) |  |
-|[Bookstack](https://www.bookstackapp.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.bookstackapp.com/docs/admin/installation/#docker) |  |  |  |
+|[Bookstack](https://www.bookstackapp.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://www.bookstackapp.com/docs/admin/installation/#docker) |  |  |  |
 |[Caddy](https://caddyserver.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://hub.docker.com/_/caddy) |  | [![](../build/images/script_icon.png)](../tools/install_caddy.sh) |  |
 |[Calibre](https://calibre-ebook.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre) |  |  |  |
 |[Calibre Web](https://calibre-ebook.com/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://docs.linuxserver.io/images/docker-calibre-web) |  |  |  |
