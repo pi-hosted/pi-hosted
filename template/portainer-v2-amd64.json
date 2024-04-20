@@ -716,7 +716,7 @@
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/bookstack.yml",
-				"url": "https://github.com/pi-hosted/pi-hosted"
+				"url": "https://github.com/pi-hosted/pi-hosted/"
 			},
 			"title": "Bookstack",
 			"type": 3
