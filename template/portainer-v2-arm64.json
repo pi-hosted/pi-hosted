@@ -9,7 +9,7 @@
 			"description": "AdGuard Home is a network-wide software for blocking ads & tracking.",
 			"image": "adguard/adguardhome:latest",
 			"logo": "https://developer.asustor.com/uploadIcons/0020_999_1595573028_AdGuardhome_256.png",
-			"name": "Adguardhome",
+			"name": "Adguard",
 			"platform": "linux",
 			"ports": [
 				"53:53/tcp",
