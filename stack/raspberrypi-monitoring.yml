@@ -4,7 +4,7 @@ services:
     command:
     - '--docker_only=true'
     - '--housekeeping_interval=30s'
-    - '--disable_metrics=accelerator,cpu_topology,disk,memory_numa,tcp,udp,percpu,sched,process,hugetlb,referenced_memory,resctrl,cpuset,advtcp,memory_numa'
+    - '--disable_metrics=cpu_topology,disk,memory_numa,tcp,udp,percpu,sched,process,hugetlb,referenced_memory,resctrl,cpuset,advtcp,memory_numa'
     - '--store_container_labels=false'
     - '--event_storage_event_limit=default=0'
     - '--event_storage_age_limit=default=0'
@@ -14,7 +14,7 @@ services:
     expose:
       - 8080
     hostname: rpi-cadvisor
-    image: zcube/cadvisor:latest
+    image: ghcr.io/google/cadvisor:0.55.1
     ipc: shareable
     networks:
       - rpimonitor_default
