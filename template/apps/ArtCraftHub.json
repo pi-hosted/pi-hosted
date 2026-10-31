@@ -1,0 +1,37 @@
+{
+  "categories": [
+    "Productivity",
+    "Creative"
+  ],
+  "description": "A self-hosted launcher for the ArtCraft web apps (WordCraft, GridCraft, DeckCraft, PdfCraft, DesignCraft) with tabs, dark mode and automatic app updates.",
+  "image_arm64": "ghcr.io/cj0206/artcrafthub:latest",
+  "image_amd64": "ghcr.io/cj0206/artcrafthub:latest",
+  "logo": "https://raw.githubusercontent.com/cj0206/artcrafthub/main/public/favicon.svg",
+  "name": "artcrafthub",
+  "officialDoc": "https://github.com/cj0206/artcrafthub",
+  "platform": "linux",
+  "ports": [
+    "8086:8080/tcp"
+  ],
+  "restart_policy": "unless-stopped",
+  "title": "ArtCraft Hub",
+  "type": 1,
+  "env": [
+    {
+      "name": "ADMIN_TOKEN",
+      "label": "Admin token (a long random string, used by the Manage button)"
+    },
+    {
+      "name": "UPDATE_INTERVAL_HOURS",
+      "label": "Hours between update checks",
+      "default": "6"
+    }
+  ],
+  "volumes": [
+    {
+      "bind": "/portainer/Files/AppData/Config/ArtCraftHub",
+      "container": "/data"
+    }
+  ],
+  "webpage": "https://getartcraft.com/apps"
+}
