@@ -453,10 +453,11 @@
 				"Productivity",
 				"Creative"
 			],
-			"description": "A self-hosted launcher for the ArtCraft web apps (WordCraft, GridCraft, DeckCraft, PdfCraft, DesignCraft) with tabs, dark mode and automatic app updates.",
+			"description": "A self-hosted launcher for the ArtCraft web apps (WordCraft, GridCraft, DeckCraft, PdfCraft, DesignCraft, PhotoCraft) with tabs, dark and light themes, and automatic app updates.",
 			"image": "ghcr.io/cj0206/artcrafthub:latest",
-			"logo": "https://raw.githubusercontent.com/cj0206/artcrafthub/main/public/favicon.svg",
+			"logo": "https://raw.githubusercontent.com/CJ0206/ArtCraftHub/main/public/icon-192.png",
 			"name": "artcrafthub",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/CJ0206/ArtCraftHub\" target=\"_blank\">https://github.com/CJ0206/ArtCraftHub</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/CJ0206/ArtCraftHub\" target=\"_blank\">https://github.com/CJ0206/ArtCraftHub</a><br><br><br>Set <b>ADMIN_TOKEN</b> to a long random string. It is the password for the Manage button, where you add, update and remove apps. Visit the port you chose, then press Manage.",
 			"platform": "linux",
 			"ports": [
 				"8086:8080/tcp"
@@ -473,6 +474,10 @@
 					"name": "UPDATE_INTERVAL_HOURS",
 					"label": "Hours between update checks",
 					"default": "6"
+				},
+				{
+					"name": "GITHUB_TOKEN",
+					"label": "GitHub token (optional, raises GitHub's request limit)"
 				}
 			],
 			"volumes": [
@@ -480,8 +485,7 @@
 					"bind": "/portainer/Files/AppData/Config/ArtCraftHub",
 					"container": "/data"
 				}
-			],
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://getartcraft.com/apps\" target=\"_blank\">https://getartcraft.com/apps</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/cj0206/artcrafthub\" target=\"_blank\">https://github.com/cj0206/artcrafthub</a><br><br><br>"
+			]
 		},
 		{
 			"categories": [
