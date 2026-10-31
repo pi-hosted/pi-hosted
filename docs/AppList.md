@@ -4,7 +4,7 @@ List of all apps included in this project with info related to it.
 
 |**Arm32:**          |**Arm64:**|**Amd64:**|**Total:**|
 |:-------------------|:--------:|:--------:|:--------:|
-| 104 apps | 232 apps | 235 apps | 238 apps |
+| 104 apps | 233 apps | 236 apps | 239 apps |
 
 ---
 
@@ -20,6 +20,7 @@ List of all apps included in this project with info related to it.
 |[ArchiSteamFarm](https://github.com/JustArchiNET/ArchiSteamFarm/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker/) |  |  |  |
 |[Archivebox](https://archivebox.io/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/ArchiveBox/ArchiveBox/wiki/Docker) |  |  |  |
 |[AriaNG](https://github.com/hurlenko/aria2-ariang-docker)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/hurlenko/aria2-ariang-docker) |  |  |  |
+|[ArtCraft Hub](https://getartcraft.com/apps)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/cj0206/artcrafthub) |  |  |  |
 |[AudioBookshelf](https://audiobookshelf.org)|:x:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://github.com/advplyr/audiobookshelf) |  |  |  |
 |[Authelia](https://www.authelia.com/)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|Container| [![](../build/images/blue_doc_icon.png)](https://www.authelia.com/docs/configuration/) |  |  |  |
 |[Authentik](https://goauthentik.io/)|:x:|:heavy_check_mark:|:heavy_check_mark:|Stack| [![](../build/images/blue_doc_icon.png)](https://goauthentik.io/docs/) |  | [![](../build/images/script_icon.png)](../tools/install_authentik.sh) |  |

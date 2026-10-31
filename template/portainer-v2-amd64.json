@@ -450,6 +450,41 @@
 		},
 		{
 			"categories": [
+				"Productivity",
+				"Creative"
+			],
+			"description": "A self-hosted launcher for the ArtCraft web apps (WordCraft, GridCraft, DeckCraft, PdfCraft, DesignCraft) with tabs, dark mode and automatic app updates.",
+			"image": "ghcr.io/cj0206/artcrafthub:latest",
+			"logo": "https://raw.githubusercontent.com/cj0206/artcrafthub/main/public/favicon.svg",
+			"name": "artcrafthub",
+			"platform": "linux",
+			"ports": [
+				"8086:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "ArtCraft Hub",
+			"type": 1,
+			"env": [
+				{
+					"name": "ADMIN_TOKEN",
+					"label": "Admin token (a long random string, used by the Manage button)"
+				},
+				{
+					"name": "UPDATE_INTERVAL_HOURS",
+					"label": "Hours between update checks",
+					"default": "6"
+				}
+			],
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/ArtCraftHub",
+					"container": "/data"
+				}
+			],
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://getartcraft.com/apps\" target=\"_blank\">https://getartcraft.com/apps</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/cj0206/artcrafthub\" target=\"_blank\">https://github.com/cj0206/artcrafthub</a><br><br><br>"
+		},
+		{
+			"categories": [
 				"Media",
 				"Audiobooks"
 			],
