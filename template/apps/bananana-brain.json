@@ -1,0 +1,34 @@
+{
+	"categories": [
+		"Monitoring",
+		"Tools"
+	],
+	"description": "Your own control room for your servers, Macs and PCs: live readings, alerts, automations, files, terminals and history on your own hardware, reached from anywhere at your-name.bananana.dev and in the bananana.dev iPhone and Android apps through an outbound end-to-end encrypted relay (no open ports or VPN). Website: https://bananana.dev",
+	"env": [
+		{
+			"description": "From https://bananana.dev/start (starts with bst_). Only used on the first start.",
+			"label": "BANANANA_SETUP_TOKEN",
+			"name": "BANANANA_SETUP_TOKEN"
+		}
+	],
+	"image_amd64": "romanvaxman/bananana-brain:latest",
+	"image_arm64": "romanvaxman/bananana-brain:latest",
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bananana.png",
+	"name": "bananana-brain",
+	"note": "First create a free account at <a href=\"https://bananana.dev/start\" target=\"_blank\">bananana.dev/start</a> and copy the setup token it shows (it starts with <code>bst_</code>) into Setup token; it's only used on the first start and is the only setting you need. Then open your brain at the address bananana.dev gives you, or on your network at https://this-host:18771 (port 18771, HTTPS with a self-signed certificate, same sign-in). Its data lives in /portainer/Files/AppData/Config/bananana-brain: keep it backed up. Help: <a href=\"https://bananana.dev/help/docker\" target=\"_blank\">bananana.dev/help/docker</a>",
+	"officialDoc": "https://bananana.dev/help/docker",
+	"platform": "linux",
+	"ports": [
+		"18771:18771/tcp"
+	],
+	"restart_policy": "unless-stopped",
+	"title": "bananana brain",
+	"type": 1,
+	"volumes": [
+		{
+			"bind": "/portainer/Files/AppData/Config/bananana-brain",
+			"container": "/data"
+		}
+	],
+	"webpage": "https://bananana.dev"
+}
