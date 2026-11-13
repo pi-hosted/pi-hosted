@@ -1,0 +1,17 @@
+---
+# The bananana agent. It reports and manages the host itself (processes, disks, Docker, files, terminal),
+# so it runs privileged with the host's processes, network and name.
+services:
+  bananana-node:
+    image: romanvaxman/bananana-node:latest
+    container_name: bananana-node
+    restart: unless-stopped
+    privileged: true
+    pid: host
+    network_mode: host
+    uts: host
+    environment:
+      - BANANANA_NODE_TOKEN=${BANANANA_NODE_TOKEN}
+      - BANANANA_NODE_NAME=${BANANANA_NODE_NAME}
+    volumes:
+      - /portainer/Files/AppData/Config/bananana-node:/data

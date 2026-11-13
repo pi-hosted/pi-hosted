@@ -1,0 +1,34 @@
+{
+	"categories": [
+		"Monitoring",
+		"Tools"
+	],
+	"description": "The bananana agent: connects this machine to your bananana brain, so you see and manage it from the dashboard and the bananana.dev apps (live CPU, memory, disk, temperature and network readings, processes, Docker containers, files and a terminal, with alerts) through an outbound end-to-end encrypted relay; no ports are opened. Website: https://bananana.dev",
+	"env": [
+		{
+			"description": "From your brain's Nodes, Add node (starts with bnn-, or a remote code). Only used on the first start.",
+			"label": "BANANANA_NODE_TOKEN",
+			"name": "BANANANA_NODE_TOKEN"
+		},
+		{
+			"default": "",
+			"description": "The name shown on the brain. Defaults to the name in the code, or the host's name.",
+			"label": "BANANANA_NODE_NAME",
+			"name": "BANANANA_NODE_NAME"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bananana.png",
+	"name": "bananana-node",
+	"note": "Why privileged with the host's network, processes and name: it reports and manages the host itself (its processes, disks, Docker, files and terminal), not just its own container, so it can only deploy for Portainer admins if regular users are blocked from privileged mode. You choose what it may do (terminal, files, service control) when you create its code on the brain, and the agent enforces that. On your brain, open Nodes, Add node, Install command, pick Docker, create the command and paste the code from it (it starts with <code>bnn-</code>) into Code; it works once. It opens no ports; its identity lives in /portainer/Files/AppData/Config/bananana-node.",
+	"officialDoc": "https://bananana.dev/help/onboarding",
+	"platform": "linux",
+	"repository": {
+		"stackfile_amd64": "stack/bananana-node.yml",
+		"stackfile_arm64": "stack/bananana-node.yml",
+		"url": "https://github.com/pi-hosted/pi-hosted/"
+	},
+	"restart_policy": "unless-stopped",
+	"title": "bananana node",
+	"type": 3,
+	"webpage": "https://bananana.dev"
+}
