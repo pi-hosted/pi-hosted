@@ -1,0 +1,24 @@
+{
+  "categories": ["Productivity", "Creative"],
+  "description": "A self-hosted launcher for the ArtCraft web apps (WordCraft, GridCraft, DeckCraft, PdfCraft, DesignCraft, PhotoCraft) with tabs, dark and light themes, and automatic app updates.",
+  "image_arm64": "ghcr.io/cj0206/artcrafthub:latest",
+  "image_amd64": "ghcr.io/cj0206/artcrafthub:latest",
+  "logo": "https://raw.githubusercontent.com/CJ0206/ArtCraftHub/main/public/icon-192.png",
+  "name": "artcrafthub",
+  "note": "Set <b>ADMIN_TOKEN</b> to a long random string. It is the password for the Manage button, where you add, update and remove apps. Visit the port you chose, then press Manage.",
+  "officialDoc": "https://github.com/CJ0206/ArtCraftHub",
+  "platform": "linux",
+  "ports": ["8086:8080/tcp"],
+  "restart_policy": "unless-stopped",
+  "title": "ArtCraft Hub",
+  "type": 1,
+  "env": [
+    { "name": "ADMIN_TOKEN", "label": "Admin token (a long random string, used by the Manage button)" },
+    { "name": "UPDATE_INTERVAL_HOURS", "label": "Hours between update checks", "default": "6" },
+    { "name": "GITHUB_TOKEN", "label": "GitHub token (optional, raises GitHub's request limit)" }
+  ],
+  "volumes": [
+    { "bind": "/portainer/Files/AppData/Config/ArtCraftHub", "container": "/data" }
+  ],
+  "webpage": "https://github.com/CJ0206/ArtCraftHub"
+}
