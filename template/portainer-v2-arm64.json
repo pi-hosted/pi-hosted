@@ -614,6 +614,68 @@
 		},
 		{
 			"categories": [
+				"Monitoring",
+				"Tools"
+			],
+			"description": "Your own control room for your servers, Macs and PCs: live readings, alerts, automations, files, terminals and history on your own hardware, reached from anywhere at your-name.bananana.dev and in the bananana.dev iPhone and Android apps through an outbound end-to-end encrypted relay (no open ports or VPN). Website: https://bananana.dev",
+			"env": [
+				{
+					"description": "From https://bananana.dev/start (starts with bst_). Only used on the first start.",
+					"label": "BANANANA_SETUP_TOKEN",
+					"name": "BANANANA_SETUP_TOKEN"
+				}
+			],
+			"image": "romanvaxman/bananana-brain:latest",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bananana.png",
+			"name": "bananana-brain",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://bananana.dev\" target=\"_blank\">https://bananana.dev</a><br><b>Official Docker Documentation: </b><a href=\"https://bananana.dev/help/docker\" target=\"_blank\">https://bananana.dev/help/docker</a><br><br><br>First create a free account at <a href=\\\"https://bananana.dev/start\\\" target=\\\"_blank\\\">bananana.dev/start</a> and copy the setup token it shows (it starts with <code>bst_</code>) into Setup token; it's only used on the first start and is the only setting you need. Then open your brain at the address bananana.dev gives you, or on your network at https://this-host:18771 (port 18771, HTTPS with a self-signed certificate, same sign-in). Its data lives in /portainer/Files/AppData/Config/bananana-brain: keep it backed up. Help: <a href=\\\"https://bananana.dev/help/docker\\\" target=\\\"_blank\\\">bananana.dev/help/docker</a>",
+			"platform": "linux",
+			"ports": [
+				"18771:18771/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "bananana brain",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/bananana-brain",
+					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Monitoring",
+				"Tools"
+			],
+			"description": "The bananana agent: connects this machine to your bananana brain, so you see and manage it from the dashboard and the bananana.dev apps (live CPU, memory, disk, temperature and network readings, processes, Docker containers, files and a terminal, with alerts) through an outbound end-to-end encrypted relay; no ports are opened. Website: https://bananana.dev",
+			"env": [
+				{
+					"description": "From your brain's Nodes, Add node (starts with bnn-, or a remote code). Only used on the first start.",
+					"label": "BANANANA_NODE_TOKEN",
+					"name": "BANANANA_NODE_TOKEN"
+				},
+				{
+					"default": "",
+					"description": "The name shown on the brain. Defaults to the name in the code, or the host's name.",
+					"label": "BANANANA_NODE_NAME",
+					"name": "BANANANA_NODE_NAME"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/bananana.png",
+			"name": "bananana-node",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://bananana.dev\" target=\"_blank\">https://bananana.dev</a><br><b>Official Docker Documentation: </b><a href=\"https://bananana.dev/help/onboarding\" target=\"_blank\">https://bananana.dev/help/onboarding</a><br><br><br>Why privileged with the host's network, processes and name: it reports and manages the host itself (its processes, disks, Docker, files and terminal), not just its own container, so it can only deploy for Portainer admins if regular users are blocked from privileged mode. You choose what it may do (terminal, files, service control) when you create its code on the brain, and the agent enforces that. On your brain, open Nodes, Add node, Install command, pick Docker, create the command and paste the code from it (it starts with <code>bnn-</code>) into Code; it works once. It opens no ports; its identity lives in /portainer/Files/AppData/Config/bananana-node.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/bananana-node.yml",
+				"url": "https://github.com/pi-hosted/pi-hosted/"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "bananana node",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Video",
 				"Music"
 			],
